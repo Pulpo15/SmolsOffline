@@ -178,7 +178,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 951
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -346,8 +346,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8f549c85880f3a489360f7d89987547, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _rotationSensibility: 50
   GroundLayerName: Ground
-  _turretPrefab: {fileID: 3612493361454642614, guid: 36b344e2a249d1a48b7f829ca9ea661c, type: 3}
+  _spawneableTurretPrefab: {fileID: 3612493361454642614, guid: 85c900facd8a86240871133736247b3a, type: 3}
+  _nonSpawneableTurretPrefab: {fileID: 3612493361454642614, guid: 36b344e2a249d1a48b7f829ca9ea661c, type: 3}
+  _turretPrefab: {fileID: 3612493361454642614, guid: 23007a02916f2914faaba3d1ed27436e, type: 3}
 --- !u!1 &3985884462395675897
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,8 @@ public class PlayerManager : MonoBehaviour {
 
     [HideInInspector]
     public TurretSpawnig turretSpawnig;
+    [HideInInspector]
+    public SwordAnimationManager swordAnimationManager;
 
     private void Awake() {
         if (instance != null) {
@@ -37,6 +39,7 @@ public class PlayerManager : MonoBehaviour {
         Cursor.visible = false;
 
         turretSpawnig = gameObject.GetComponent<TurretSpawnig>();
+        swordAnimationManager = gameObject.GetComponentInChildren<SwordAnimationManager>();
     }
 
     void Update() {
@@ -71,6 +74,10 @@ public class PlayerManager : MonoBehaviour {
         //Open-Close Store
         if (Input.GetKeyDown(KeyCode.Tab)) {
             CanvasManager.instance.StoreCanvasManager();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            swordAnimationManager.SwordAttack();
         }
 
     }

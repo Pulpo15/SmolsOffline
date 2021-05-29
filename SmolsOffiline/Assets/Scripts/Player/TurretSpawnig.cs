@@ -15,9 +15,12 @@ public class TurretSpawnig : MonoBehaviour {
     [SerializeField]
     private GameObject _turretPrefab;
 
+    [HideInInspector]
+    public bool activatePreBuy = false;
+
     private GameObject _spawneableTurretGO;
     private GameObject _nonSpawneableTurretGO;
-    //private GameObject _turretGO;
+    private GameObject _turretGO;
     private float _rot;
     private int _nonSpawneablelayerMask = 1 << 8;
     private int _spawneablelayerMask = 1 << 9;
@@ -28,7 +31,14 @@ public class TurretSpawnig : MonoBehaviour {
     }
 
     private void Update() {
-        PreBuyTurret();
+        if (activatePreBuy) {
+            PreBuyTurret();
+            if (Input.GetKeyDown(KeyCode.Escape))
+                activatePreBuy = false;
+        } else if (!activatePreBuy) {
+            GameObjectManager(_nonSpawneableTurretGO, false);
+            GameObjectManager(_spawneableTurretGO, false);
+        }
     }
 
     public void PreBuyTurret() {
@@ -46,11 +56,19 @@ public class TurretSpawnig : MonoBehaviour {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),
                 out hit, Mathf.Infinity, _spawneablelayerMask)) {
 
-                TurretObjectManager(_spawneableTurretGO, hit);
-                GameObjectManager(_nonSpawneableTurretGO, false);
+                if (EconomyManager.instance.money >= 100) {
+                    TurretObjectManager(_spawneableTurretGO, hit);
+                    GameObjectManager(_nonSpawneableTurretGO, false);
 
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-                    BuyTurret(_spawneableTurretGO.transform, Quaternion.Euler(0, _rot, 0));
+                    if (Input.GetKeyDown(KeyCode.Mouse0)) {
+                        BuyTurret(_spawneableTurretGO.transform, Quaternion.Euler(0, _rot, 0));
+                        EconomyManager.instance.AddMoney(-100);
+                    }
+                } else {
+                    TurretObjectManager(_nonSpawneableTurretGO, hit);
+                    GameObjectManager(_spawneableTurretGO, false);
+                }
+
 
             } else if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),
                   out hit, Mathf.Infinity, _nonSpawneablelayerMask)) {
@@ -82,6 +100,6 @@ public class TurretSpawnig : MonoBehaviour {
     }
 
     private void BuyTurret(Transform _position, Quaternion _rotation) {
-        Instantiate(_turretPrefab, _position.position, _rotation);
+        _turretGO = Instantiate(_turretPrefab, _position.position, _rotation);
     }
 }

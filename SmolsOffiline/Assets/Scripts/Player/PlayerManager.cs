@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
+    public static PlayerManager instance;
+
     [Header("Rotation")]
     public float mouseSensitivity = 100f;
 
@@ -20,9 +22,21 @@ public class PlayerManager : MonoBehaviour {
 
     public float jumpForce = 7; //7 by default
 
+    [HideInInspector]
+    public TurretSpawnig turretSpawnig;
+
+    private void Awake() {
+        if (instance != null) {
+            Debug.LogError("GameManager is a singleton, can't be instantiated more than 1 times");
+        } else
+            instance = this;
+    }
+
     void Start() {
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+
+        turretSpawnig = gameObject.GetComponent<TurretSpawnig>();
     }
 
     void Update() {
@@ -52,6 +66,11 @@ public class PlayerManager : MonoBehaviour {
             RB.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         } else if (!Input.GetKey(KeyCode.Space) && IsGrounded()) {
             RB.velocity = new Vector3(0,RB.velocity.y,0);
+        }
+
+        //Open-Close Store
+        if (Input.GetKeyDown(KeyCode.Tab)) {
+            CanvasManager.instance.StoreCanvasManager();
         }
 
     }

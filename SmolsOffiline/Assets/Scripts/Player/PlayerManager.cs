@@ -22,10 +22,26 @@ public class PlayerManager : MonoBehaviour {
 
     public float jumpForce = 7; //7 by default
 
+    [Header("Weapons")]
+    public GameObject WeaponParent;
+    public enum WeaponType {
+        Sword,
+        Spear,
+        Axe
+    }
+    public WeaponType weaponType;
+    private Weapon weapon;
+
     [HideInInspector]
     public TurretSpawnig turretSpawnig;
     [HideInInspector]
-    public SwordAnimationManager swordAnimationManager;
+    public SwordManager swordManager;
+    //[HideInInspector]
+    //public SpearManager spearManager;
+    //[HideInInspector]
+    //public AxeManager axeManager;
+
+    private int _enemylayerMask = 1 << 11;
 
     private void Awake() {
         if (instance != null) {
@@ -39,7 +55,7 @@ public class PlayerManager : MonoBehaviour {
         Cursor.visible = false;
 
         turretSpawnig = gameObject.GetComponent<TurretSpawnig>();
-        swordAnimationManager = gameObject.GetComponentInChildren<SwordAnimationManager>();
+        SetUpWeapon();
     }
 
     void Update() {
@@ -76,14 +92,64 @@ public class PlayerManager : MonoBehaviour {
             CanvasManager.instance.StoreCanvasManager();
         }
 
+        //Attack
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            swordAnimationManager.SwordAttack();
-        }
+            if (InGameMenuManager.instance.GameIsPaused)
+                return;
+            if (turretSpawnig.activatePreBuy)
+                return;
+            RaycastHit hit;
+            switch (weaponType) {
+                case WeaponType.Sword:
+                SwordManager obj = WeaponParent.GetComponentInChildren<SwordManager>();
+                if (obj.canAttack && Physics.Raycast(transform.position, 
+                    transform.TransformDirection(Vector3.forward), out hit, obj.Range, _enemylayerMask)) {
 
+                    if (Input.GetKeyDown(KeyCode.Mouse0)) {
+                        obj.Attack(hit.transform.gameObject);
+                    }
+                } else {
+                    weapon.Attack();
+                }
+                break;
+                case WeaponType.Spear:
+                break;
+                case WeaponType.Axe:
+                break;
+                default:
+                break;
+            }
+        }
     }
 
     private bool IsGrounded() {
         return Physics.CheckCapsule(col.bounds.center, new Vector3(col.bounds.center.x, 
             col.bounds.min.y, col.bounds.center.z), col.radius * .9f, groundLayers);
+    }
+
+    private void Attack(RaycastHit _hit, float _range) {
+
+    }
+
+    public void SetUpWeapon() {
+        weapon = GetWeaponOnHand();
+    }
+
+    private Weapon GetWeaponOnHand() {
+        switch (weaponType) {
+            case WeaponType.Sword:
+            return WeaponParent.GetComponentInChildren<Weapon>();
+            break;
+            case WeaponType.Spear:
+            return null;
+            break;
+            case WeaponType.Axe:
+            return null;
+            break;
+            default:
+            Debug.LogError("No weapon selected");
+            return null;
+            break;
+        }
     }
 }

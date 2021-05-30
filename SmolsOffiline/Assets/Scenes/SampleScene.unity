@@ -530,38 +530,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 28172416124173888, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_Convex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 28172416124173888, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 28213714488338586, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 28213714488338586, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.6989284
-      objectReference: {fileID: 0}
-    - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.10723385
-      objectReference: {fileID: 0}
-    - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6989284
-      objectReference: {fileID: 0}
-    - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.10723387
-      objectReference: {fileID: 0}
     - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
@@ -621,6 +589,10 @@ PrefabInstance:
     - target: {fileID: 3985884462122598710, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_CullingMask.m_Bits
       value: 4023
+      objectReference: {fileID: 0}
+    - target: {fileID: 3985884462287747780, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
+      propertyPath: range
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5670426963339944793, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: _swordAnimator

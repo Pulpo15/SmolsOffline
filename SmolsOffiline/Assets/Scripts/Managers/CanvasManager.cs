@@ -13,12 +13,19 @@ public class CanvasManager : MonoBehaviour {
     [SerializeField]
     private Text _moneyTag;
     private int _money;
+    [SerializeField]
+    private Text _waveTag;
+    private WaveManager _waveManager;
 
     private void Awake() {
         if (instance != null) {
-            Debug.LogError("GameManager is a singleton, can't be instantiated more than 1 times");
+            Debug.LogError("CanvasManager is a singleton, can't be instantiated more than 1 times");
         } else
             instance = this;
+    }
+
+    private void Start() {
+        _waveManager = gameObject.GetComponent<WaveManager>();   
     }
 
     private void Update() {
@@ -29,6 +36,8 @@ public class CanvasManager : MonoBehaviour {
                 InGameMenuManager.instance.Resume();
             }
         }
+
+        _waveTag.text = _waveManager.GetWaveIndex().ToString();
     }
 
     public bool GetStoreCanvasActive() {

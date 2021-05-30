@@ -23,6 +23,7 @@ public class EnemyHealthManager : MonoBehaviour
     private void CheckStatus() {
         if (_heal <= 0) {
             gameObject.SetActive(false);
+            WaveManager.instance._enemyList.Remove(gameObject);
         }
     }
 

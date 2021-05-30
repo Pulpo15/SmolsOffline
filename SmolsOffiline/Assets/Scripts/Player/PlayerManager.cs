@@ -45,7 +45,7 @@ public class PlayerManager : MonoBehaviour {
 
     private void Awake() {
         if (instance != null) {
-            Debug.LogError("GameManager is a singleton, can't be instantiated more than 1 times");
+            Debug.LogError("PlayerManager is a singleton, can't be instantiated more than 1 times");
         } else
             instance = this;
     }

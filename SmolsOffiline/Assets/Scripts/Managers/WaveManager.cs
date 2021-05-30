@@ -52,7 +52,7 @@ public class WaveManager : MonoBehaviour {
             SpawnEnemy();
             yield return new WaitForSeconds(1f);
         }
-        Debug.Log("Wave " + _waveIndex);
+        //Debug.Log("Wave " + _waveIndex);
     }
 
     private void SpawnEnemy() {

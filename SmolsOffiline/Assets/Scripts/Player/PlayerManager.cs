@@ -93,6 +93,8 @@ public class PlayerManager : MonoBehaviour {
         }
 
         //Attack
+        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5f, Color.red);
+
         if (Input.GetKeyDown(KeyCode.Mouse0)) {
             if (InGameMenuManager.instance.GameIsPaused)
                 return;
@@ -101,16 +103,17 @@ public class PlayerManager : MonoBehaviour {
             RaycastHit hit;
             switch (weaponType) {
                 case WeaponType.Sword:
+                weapon.PrepareAttack();
                 SwordManager obj = WeaponParent.GetComponentInChildren<SwordManager>();
-                if (obj.canAttack && Physics.Raycast(transform.position, 
-                    transform.TransformDirection(Vector3.forward), out hit, obj.Range, _enemylayerMask)) {
+                //if (obj.canAttack && Physics.Raycast(transform.position, 
+                //    transform.TransformDirection(Vector3.forward), out hit, obj.Range, _enemylayerMask)) {
 
-                    if (Input.GetKeyDown(KeyCode.Mouse0)) {
-                        obj.Attack(hit.transform.gameObject);
-                    }
-                } else {
-                    weapon.Attack();
-                }
+                //    if (Input.GetKeyDown(KeyCode.Mouse0)) {
+                //        obj.PrepareAttack(hit.transform.gameObject);
+                //    }
+                //} else {
+                    
+                //}
                 break;
                 case WeaponType.Spear:
                 break;

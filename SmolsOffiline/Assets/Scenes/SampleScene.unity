@@ -929,6 +929,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CrossBar
       objectReference: {fileID: 0}
+    - target: {fileID: 28213714488338586, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 36754787590042318, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.555
@@ -969,10 +973,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3985884460852373576, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_Center.y
-      value: -0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -983,7 +983,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.91
       objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalPosition.z

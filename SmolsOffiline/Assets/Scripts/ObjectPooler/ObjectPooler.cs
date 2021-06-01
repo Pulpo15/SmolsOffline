@@ -30,7 +30,7 @@ public class ObjectPooler : MonoBehaviour {
             Queue<GameObject> objectPool = new Queue<GameObject>();
             _pool.parent = new GameObject();
             _pool.parent.name = _pool.tag;
-
+            _pool.parent.gameObject.transform.parent = gameObject.transform;
             for (int i = 0; i < _pool.size; i++) {
                 GameObject obj = Instantiate(_pool.prefab, _pool.parent.transform);
                 obj.SetActive(false);

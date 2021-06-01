@@ -50,6 +50,8 @@ public class EnemyAnimManager : MonoBehaviour {
         yield return new WaitForSeconds(2f);
         transform.parent.gameObject.SetActive(false);
         _animator.SetBool("Die", false);
+        _animator.SetBool("Attack", false);
+        _animator.SetBool("Run", false);
         _enemyManager.dead = false;
     }
 

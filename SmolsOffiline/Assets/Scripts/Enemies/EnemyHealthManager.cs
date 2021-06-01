@@ -13,10 +13,6 @@ public class EnemyHealthManager : MonoBehaviour {
         _enemyAnimManager = GetComponentInChildren<EnemyAnimManager>();
     }
 
-    //public void OnObjectSpawn() {
-    //    _heal = maxHeal;
-    //}
-
     public int GetHeal() {
         return _heal;
     }
@@ -25,6 +21,7 @@ public class EnemyHealthManager : MonoBehaviour {
     }
     public void RecieveDamage(int _value) {
         if (_heal <= 0) {
+            CheckStatus();
             return;
         }
         _heal -= _value;

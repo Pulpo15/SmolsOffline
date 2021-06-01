@@ -14,6 +14,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     private Transform _target;
     private int _wayPointIndex;
     private EnemyAnimManager _enemyAnimManager;
+    private float _speedRotation = 5f;
 
     private void Awake() {
 
@@ -22,6 +23,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     public void OnObjectSpawn() {
         transform.rotation = Quaternion.LookRotation(Waypoints.waypoints[0].position - transform.position);
         spawn = true;
+        _target = null;
     }
 
     public void SetFirstTarget() {
@@ -37,7 +39,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
         if (!isWalking)
             return;
         Quaternion _aimPosition = Quaternion.LookRotation(_target.position - transform.position);
-        transform.rotation = Quaternion.Lerp(transform.rotation, _aimPosition, 5f * Time.deltaTime);
+        transform.rotation = Quaternion.Lerp(transform.rotation, _aimPosition, _speedRotation * Time.deltaTime);
 
         Vector3 dir = _target.position - transform.position;
         transform.Translate(dir.normalized * speed * Time.deltaTime, Space.World);

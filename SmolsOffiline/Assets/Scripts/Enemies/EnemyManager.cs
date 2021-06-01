@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class EnemyManager : MonoBehaviour, IPooledObject {
     public float speed = 2f;
+    public int totalPaths = 3;
 
     [HideInInspector]
     public bool spawn = false;
@@ -13,6 +14,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
 
     private Transform _target;
     private int _wayPointIndex;
+    private int _wayPointIndexParent;
     private EnemyAnimManager _enemyAnimManager;
     private float _speedRotation = 5f;
 
@@ -21,13 +23,14 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     }
 
     public void OnObjectSpawn() {
-        transform.rotation = Quaternion.LookRotation(Waypoints.waypoints[0].position - transform.position);
+        transform.rotation = Quaternion.LookRotation(Waypoints.waypoints[0,0].position - transform.position);
+        _wayPointIndexParent = WaveManager.instance._spawnIndex;
         spawn = true;
         _target = null;
     }
 
     public void SetFirstTarget() {
-        _target = Waypoints.waypoints[0];
+        _target = Waypoints.waypoints[_wayPointIndexParent, 0];
         isWalking = true;
     }
 
@@ -50,12 +53,12 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     }
 
     private void GetNextWaypoint() {
-        if (_wayPointIndex >= Waypoints.waypoints.Length - 1) {
+        if (_wayPointIndex >= Waypoints.waypoints.Length / totalPaths - 1) {
             isWalking = false;
             return;
         }
         isWalking = true;
         _wayPointIndex++;
-        _target = Waypoints.waypoints[_wayPointIndex];
+        _target = Waypoints.waypoints[_wayPointIndexParent, _wayPointIndex];
     }
 }

@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class TurretSpawnig : MonoBehaviour {
 
+    [Header("Values")]
     [SerializeField]
     private float _rotationSensibility = 50f;
     [SerializeField]
     private string GroundLayerName = "Ground";
+    [Header("Turrets Object References")]
     [SerializeField]
     private GameObject _spawneableTurretPrefab;
     [SerializeField]
     private GameObject _nonSpawneableTurretPrefab;
-    [SerializeField]
-    private GameObject _turretPrefab;
 
     [HideInInspector]
     public bool activatePreBuy = false;
@@ -24,10 +24,12 @@ public class TurretSpawnig : MonoBehaviour {
     private float _rot;
     private int _nonSpawneablelayerMask = 1 << 8;
     private int _spawneablelayerMask = 1 << 9;
+    private ObjectPooler _objectPooler;
 
     private void Start() {
         _nonSpawneableTurretGO = Instantiate(_nonSpawneableTurretPrefab, Vector3.zero, Quaternion.identity);
         _spawneableTurretGO = Instantiate(_spawneableTurretPrefab, Vector3.zero, Quaternion.identity);
+        _objectPooler = ObjectPooler.instance;
     }
 
     private void Update() {
@@ -100,6 +102,6 @@ public class TurretSpawnig : MonoBehaviour {
     }
 
     private void BuyTurret(Transform _position, Quaternion _rotation) {
-        _turretGO = Instantiate(_turretPrefab, _position.position, _rotation);
+        _turretGO = _objectPooler.SpawnFromPool("CannonTurret", _position.position, _rotation);
     }
 }

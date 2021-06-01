@@ -4,6 +4,7 @@ using UnityEngine;
 public class CannonBullet : MonoBehaviour {
 
     public float speed = 70f;
+    public int damage = 10;
 
     [SerializeField]
     private GameObject _impactEffect;
@@ -31,6 +32,7 @@ public class CannonBullet : MonoBehaviour {
     }
 
     private void HitTarget() {
+        _target.GetComponent<EnemyHealthManager>().RecieveDamage(damage);
         GameObject _particles = Instantiate(_impactEffect, transform.position, transform.rotation);
         Destroy(_particles, 1);
         gameObject.SetActive(false);

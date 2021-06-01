@@ -150,7 +150,6 @@ public class PlayerManager : MonoBehaviour {
             return null;
             break;
             default:
-            Debug.LogError("No weapon selected");
             return null;
             break;
         }

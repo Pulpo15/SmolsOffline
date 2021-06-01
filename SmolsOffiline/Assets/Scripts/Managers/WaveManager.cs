@@ -6,7 +6,9 @@ public class WaveManager : MonoBehaviour {
     public static WaveManager instance;
 
     public Transform enemyPrefab;
-    public Transform spawnPoint;
+    public Transform[] spawnPoint;
+    public int wayPointPath = 0;
+    public int _spawnIndex = 0;
 
     public float timeBetweenWaves = 5f;
     private float _countDown = 2f;
@@ -37,12 +39,6 @@ public class WaveManager : MonoBehaviour {
         if (_enemyList.Count <= 0) {
             StartCoroutine(SpawnWave());
         }
-
-        //if (_countDown <= 0f) {
-            
-        //    _countDown = timeBetweenWaves;
-        //}
-        //_countDown -= Time.deltaTime;
     }
 
     private IEnumerator SpawnWave() {
@@ -56,8 +52,11 @@ public class WaveManager : MonoBehaviour {
     }
 
     private void SpawnEnemy() {
-        GameObject _obj = _objectPooler.SpawnFromPool("Skeleton", spawnPoint.position, spawnPoint.rotation);
+        GameObject _obj = _objectPooler.SpawnFromPool("Skeleton", spawnPoint[_spawnIndex].position, spawnPoint[_spawnIndex].rotation);
         _enemyList.Add(_obj);
+        _spawnIndex++;
+        if (_spawnIndex >= spawnPoint.Length)
+            _spawnIndex = 0;
     }
 
     public int GetWaveIndex() {

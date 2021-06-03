@@ -92,6 +92,18 @@ public class PlayerManager : MonoBehaviour {
             CanvasManager.instance.StoreCanvasManager();
         }
 
+        //Change weapon
+        if (weapon.canAttack) {
+            if (Input.GetKeyDown(KeyCode.Alpha1)) {
+                weaponType = WeaponType.Sword;
+                SetUpWeapon();
+            } else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+                weaponType = WeaponType.Spear;
+                SetUpWeapon();
+            }
+        }
+
+
         //Attack
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5f, Color.red);
 
@@ -104,18 +116,9 @@ public class PlayerManager : MonoBehaviour {
             switch (weaponType) {
                 case WeaponType.Sword:
                 weapon.PrepareAttack();
-                SwordManager obj = WeaponParent.GetComponentInChildren<SwordManager>();
-                //if (obj.canAttack && Physics.Raycast(transform.position, 
-                //    transform.TransformDirection(Vector3.forward), out hit, obj.Range, _enemylayerMask)) {
-
-                //    if (Input.GetKeyDown(KeyCode.Mouse0)) {
-                //        obj.PrepareAttack(hit.transform.gameObject);
-                //    }
-                //} else {
-                    
-                //}
                 break;
                 case WeaponType.Spear:
+                weapon.PrepareAttack();
                 break;
                 case WeaponType.Axe:
                 break;
@@ -141,10 +144,18 @@ public class PlayerManager : MonoBehaviour {
     private Weapon GetWeaponOnHand() {
         switch (weaponType) {
             case WeaponType.Sword:
+            for (int i = 0; i < WeaponParent.transform.childCount; i++) {
+                WeaponParent.transform.GetChild(i).gameObject.SetActive(false);
+            }
+            WeaponParent.transform.GetChild(0).gameObject.SetActive(true);
             return WeaponParent.GetComponentInChildren<Weapon>();
             break;
             case WeaponType.Spear:
-            return null;
+            for (int i = 0; i < WeaponParent.transform.childCount; i++) {
+                WeaponParent.transform.GetChild(i).gameObject.SetActive(false);
+            }
+            WeaponParent.transform.GetChild(1).gameObject.SetActive(true);
+            return WeaponParent.transform.GetChild(1).GetComponent<Weapon>();
             break;
             case WeaponType.Axe:
             return null;

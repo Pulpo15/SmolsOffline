@@ -10,6 +10,8 @@ public class Weapon : MonoBehaviour {
     [SerializeField]
     private Animator _animator;
 
+    protected bool _isAttacking = false;
+
     //Function to activate the animation
     public void PrepareAttack() {
         if (canAttack) {
@@ -31,6 +33,19 @@ public class Weapon : MonoBehaviour {
         canAttack = true;
     }
 
+    public void MakeDamage() {
+        _isAttacking = true;
+        //if (_target != null)
+        //    Hit();
+    }
 
+    public void EndMakeDamage() {
+        _isAttacking = false;
+    }
 
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Enemy" && _isAttacking) {
+            other.GetComponent<EnemyHealthManager>().RecieveDamage(damage);
+        }
+    }
 }

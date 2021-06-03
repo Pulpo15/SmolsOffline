@@ -28,6 +28,10 @@ public class EnemyHealthManager : MonoBehaviour {
         CheckStatus();
     }
 
+    public void SetUp() {
+        _heal = maxHeal;
+    }
+
     private void CheckStatus() {
         if (_heal <= 0) {
             _enemyAnimManager.DeathAnimation();

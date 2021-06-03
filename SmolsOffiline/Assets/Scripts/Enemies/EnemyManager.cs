@@ -16,15 +16,19 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     private int _wayPointIndex;
     private int _wayPointIndexParent;
     private EnemyAnimManager _enemyAnimManager;
+    private EnemyHealthManager _enemyHealthManager;
     private float _speedRotation = 5f;
 
     private void Awake() {
-
+        _enemyHealthManager = gameObject.GetComponent<EnemyHealthManager>();
     }
 
     public void OnObjectSpawn() {
         transform.rotation = Quaternion.LookRotation(Waypoints.waypoints[0,0].position - transform.position);
         _wayPointIndexParent = WaveManager.instance._spawnIndex;
+        _wayPointIndex = 0;
+        _enemyHealthManager.SetUp();
+        SetFirstTarget();
         spawn = true;
         _target = null;
     }

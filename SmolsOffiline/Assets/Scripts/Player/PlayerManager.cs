@@ -94,15 +94,14 @@ public class PlayerManager : MonoBehaviour {
 
         //Change weapon
         if (weapon.canAttack) {
-            if (Input.GetKeyDown(KeyCode.Alpha1)) {
+            if (Input.GetKeyDown(KeyCode.Alpha1) && weaponType != WeaponType.Sword) {
                 weaponType = WeaponType.Sword;
                 SetUpWeapon();
-            } else if (Input.GetKeyDown(KeyCode.Alpha2)) {
+            } else if (Input.GetKeyDown(KeyCode.Alpha2) && weaponType != WeaponType.Spear) {
                 weaponType = WeaponType.Spear;
                 SetUpWeapon();
             }
         }
-
 
         //Attack
         Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5f, Color.red);

@@ -30,7 +30,7 @@ public class CanvasManager : MonoBehaviour {
 
     private void Update() {
         if (_storeCanvas.activeSelf) {
-            if (Input.GetKeyDown(KeyCode.Escape)) {
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Mouse1)) {
                 _storeCanvas.SetActive(false);
 
                 InGameMenuManager.instance.Resume();

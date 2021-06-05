@@ -35,7 +35,7 @@ public class TurretSpawnig : MonoBehaviour {
     private void Update() {
         if (activatePreBuy) {
             PreBuyTurret();
-            if (Input.GetKeyDown(KeyCode.Escape))
+            if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Mouse1))
                 activatePreBuy = false;
         } else if (!activatePreBuy) {
             GameObjectManager(_nonSpawneableTurretGO, false);

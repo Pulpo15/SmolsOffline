@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 677, y: 442}
-  m_MaxSize: {x: 12002, y: 8042}
+  m_MinSize: {x: 708, y: 492}
+  m_MaxSize: {x: 18003, y: 14042}
   vertical: 0
-  controlID: 24621
+  controlID: 4310
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,10 +135,10 @@ MonoBehaviour:
     y: 0
     width: 1523
     height: 947
-  m_MinSize: {x: 402, y: 442}
-  m_MaxSize: {x: 8002, y: 8042}
+  m_MinSize: {x: 433, y: 492}
+  m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 24622
+  controlID: 4311
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 402, y: 221}
   m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 24586
+  controlID: 4254
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -220,7 +220,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: e4f8fffff6f8ffff02f9ffff52fbffff8e3d0000
+      m_ExpandedIDs: c2f8ffffe4f8fffff6f8ffff02f9ffff52fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -263,8 +263,8 @@ MonoBehaviour:
     y: 0
     width: 1240
     height: 632
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 8}
   m_Panes:
   - {fileID: 8}
@@ -307,9 +307,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 10.360073, y: 1.3358939, z: 17.453676}
+    m_Target: {x: 6.406591, y: 1.8858299, z: 18.383196}
     speed: 2
-    m_Value: {x: 10.360073, y: 1.3358939, z: 17.453676}
+    m_Value: {x: 6.406591, y: 1.8858299, z: 18.383196}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -356,13 +356,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.1000906, y: -0.7172458, z: 0.105324835, w: -0.68156105}
+    m_Target: {x: -0.17566372, y: -0.23322925, z: 0.04285838, w: -0.9555095}
     speed: 2
-    m_Value: {x: -0.100086674, y: -0.7172177, z: 0.10532071, w: -0.68153435}
+    m_Value: {x: -0.17565593, y: -0.23321891, z: 0.04285648, w: -0.9554671}
   m_Size:
-    m_Target: 3.6874585
+    m_Target: 6.1860123
     speed: 2
-    m_Value: 3.6874585
+    m_Value: 6.1860123
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -501,9 +501,9 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 3d98d1049a0f9744bb4ebc9f622d9d50, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 8e4c1b4b87ba6ba438a00119340f2d8a, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -688213497481782658, guid: 3d98d1049a0f9744bb4ebc9f622d9d50, type: 2}
+  - m_Target: {fileID: 6400014544614094512, guid: 8e4c1b4b87ba6ba438a00119340f2d8a, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -537,10 +537,10 @@ MonoBehaviour:
     y: 632
     width: 1523
     height: 315
-  m_MinSize: {x: 302, y: 221}
-  m_MaxSize: {x: 8002, y: 4021}
+  m_MinSize: {x: 433, y: 271}
+  m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 24623
+  controlID: 4312
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: AnimationWindow
+  m_Name: ProjectBrowser
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -560,15 +560,15 @@ MonoBehaviour:
     y: 0
     width: 1015
     height: 315
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 14}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_ActualView: {fileID: 12}
   m_Panes:
   - {fileID: 12}
   - {fileID: 13}
   - {fileID: 14}
   - {fileID: 15}
-  m_Selected: 2
+  m_Selected: 0
   m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
@@ -608,22 +608,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Weapons/Sword
+    - Assets/Scripts/Player
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Weapons/Sword
+  - Assets/Scripts/Player
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\SmolsOffline\SmolsOffiline
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 190}
-    m_SelectedIDs: 70a80000
-    m_LastClickedID: 43120
-    m_ExpandedIDs: 00000000884500008a4500008c45000000ca9a3b
+    scrollPos: {x: 0, y: 130}
+    m_SelectedIDs: 58460000
+    m_LastClickedID: 18008
+    m_ExpandedIDs: 00000000be450000c0450000c24500004a46000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -651,7 +651,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000884500008a4500008c45000000ca9a3b
+    m_ExpandedIDs: 00000000be450000c0450000c245000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -676,9 +676,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 42acffff
-    m_LastClickedInstanceID: -21438
-    m_HadKeyboardFocusLastEvent: 1
+    m_SelectedInstanceIDs: 02f9ffff
+    m_LastClickedInstanceID: -1790
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000030e60000e03f0000263d000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1625,8 +1625,8 @@ MonoBehaviour:
     y: 0
     width: 508
     height: 315
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -1690,7 +1690,7 @@ MonoBehaviour:
     m_CachedPref: 194
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: -1802
+  m_LastInspectedObjectInstanceID: -1790
   m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_LockTracker:

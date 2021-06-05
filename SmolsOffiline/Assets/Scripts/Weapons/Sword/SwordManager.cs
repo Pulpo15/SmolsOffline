@@ -4,12 +4,32 @@ using UnityEngine;
 
 public class SwordManager : Weapon {
 
-    public float Range;
+    private float _attackTimer = 0.5f;
+    private float _curAttackTimer;
+    private bool _timeCompleted;
 
-    private GameObject _target;
+    private void Start() {
+        _curAttackTimer = _attackTimer;
+    }
 
-    //private void Hit() {
-    //    Debug.Log("attack");
-    //    _target.GetComponent<EnemyHealthManager>().RecieveDamage(damage);
-    //}
+    private void Update() {
+        if (Input.GetKey(KeyCode.Mouse0)) {
+            this.PrepareAttack();
+            if (_curAttackTimer <= 0) {
+                _timeCompleted = true;
+            }
+            _curAttackTimer -= Time.deltaTime;
+        } else if (Input.GetKeyUp(KeyCode.Mouse0)) {
+            if (_timeCompleted) {
+                Attack();
+                _timeCompleted = false;
+                _curAttackTimer = _attackTimer;
+            } else if (!_timeCompleted) {
+                CancelPrepareAttack();
+                _curAttackTimer = _attackTimer;
+            }
+        }
+    }
+
+
 }

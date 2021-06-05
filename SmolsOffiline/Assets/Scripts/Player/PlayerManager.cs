@@ -104,27 +104,26 @@ public class PlayerManager : MonoBehaviour {
         }
 
         //Attack
-        Debug.DrawRay(transform.position, transform.TransformDirection(Vector3.forward) * 5f, Color.red);
 
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
-            if (InGameMenuManager.instance.GameIsPaused)
-                return;
-            if (turretSpawnig.activatePreBuy)
-                return;
-            RaycastHit hit;
-            switch (weaponType) {
-                case WeaponType.Sword:
-                weapon.PrepareAttack();
-                break;
-                case WeaponType.Spear:
-                weapon.PrepareAttack();
-                break;
-                case WeaponType.Axe:
-                break;
-                default:
-                break;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.Mouse0)) {
+        //    if (InGameMenuManager.instance.GameIsPaused)
+        //        return;
+        //    if (turretSpawnig.activatePreBuy)
+        //        return;
+        //    RaycastHit hit;
+        //    switch (weaponType) {
+        //        case WeaponType.Sword:
+        //        weapon.PrepareAttack();
+        //        break;
+        //        case WeaponType.Spear:
+        //        weapon.PrepareAttack();
+        //        break;
+        //        case WeaponType.Axe:
+        //        break;
+        //        default:
+        //        break;
+        //    }
+        //}
     }
 
     private bool IsGrounded() {

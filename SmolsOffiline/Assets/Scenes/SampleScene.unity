@@ -2585,7 +2585,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.91
+      value: 5.59
       objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2633,7 +2633,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3985884462287747780, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: weaponType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5670426963339944793, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: _swordAnimator

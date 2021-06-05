@@ -8,7 +8,7 @@ public class Weapon : MonoBehaviour {
     public bool canAttack = true;
 
     [SerializeField]
-    private Animator _animator;
+    protected Animator _animator;
 
     protected bool _isAttacking = false;
 
@@ -19,6 +19,11 @@ public class Weapon : MonoBehaviour {
             canAttack = false;
         }
     }
+    public void CancelPrepareAttack() {
+        _animator.SetBool("PrepareAttack", false);
+        canAttack = true;
+    }
+
     public void Attack() {
         _animator.SetBool("PrepareAttack", false);
         _animator.SetBool("Attack", true);

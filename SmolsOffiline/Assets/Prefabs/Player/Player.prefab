@@ -103,7 +103,6 @@ MonoBehaviour:
   damage: 100
   canAttack: 1
   _animator: {fileID: 7058012928545862785}
-  Range: 5
 --- !u!1 &905375858540056003
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,7 +655,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &407406530383560124
+--- !u!114 &8700090633056351391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -665,7 +664,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2156995303332962557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c91f6cfeee5136f438b1fd707e801624, type: 3}
+  m_Script: {fileID: 11500000, guid: f57525e676ae2d344b4f3b443dd1bf1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 100

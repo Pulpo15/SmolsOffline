@@ -19,15 +19,28 @@ public class Weapon : MonoBehaviour {
             canAttack = false;
         }
     }
+    public void PrepareSecondaryAttack() {
+        if (canAttack) {
+            _animator.SetBool("PrepareSecondaryAttack", true);
+            canAttack = false;
+        }
+    }
     public void CancelPrepareAttack() {
         _animator.SetBool("PrepareAttack", false);
         canAttack = true;
     }
-
+    public void CancelPrepareSecondaryAttack() {
+        _animator.SetBool("PrepareSecondaryAttack", false);
+        canAttack = true;
+    }
     public void Attack() {
         _animator.SetBool("PrepareAttack", false);
         _animator.SetBool("Attack", true);
         
+    }
+    public void SecondaryAttack() {
+        _animator.SetBool("PrepareSecondaryAttack", false);
+        _animator.SetBool("SecondaryAttack", true);
     }
     //Function to end the animation
     public void EndAttack() {
@@ -40,8 +53,6 @@ public class Weapon : MonoBehaviour {
 
     public void MakeDamage() {
         _isAttacking = true;
-        //if (_target != null)
-        //    Hit();
     }
 
     public void EndMakeDamage() {

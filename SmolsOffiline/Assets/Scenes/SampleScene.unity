@@ -2527,10 +2527,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2092687011189558009, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2156995303332962557, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -2633,7 +2629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3985884462287747780, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: weaponType
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5670426963339944793, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: _swordAnimator

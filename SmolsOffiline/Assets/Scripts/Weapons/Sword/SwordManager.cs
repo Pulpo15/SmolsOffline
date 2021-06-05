@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SwordManager : Weapon {
 
-    private float _attackTimer = 0.5f;
+    private float _attackTimer = 0.25f;
     private float _curAttackTimer;
     private bool _timeCompleted;
 

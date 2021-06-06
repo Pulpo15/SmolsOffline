@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwordManager : Weapon {
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+        if (Input.GetKey(KeyCode.Mouse0)) {
             this.PrepareAttack();
         } 
     }

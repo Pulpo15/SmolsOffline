@@ -5,6 +5,8 @@ using UnityEngine;
 public class SpearManager : Weapon {
     public Rigidbody rb;
 
+    [SerializeField]
+    private Camera cam;
     private float _attackTimer = 0.25f;
     private float _curAttackTimer;
     private bool _timeCompleted;
@@ -48,17 +50,33 @@ public class SpearManager : Weapon {
                 _curAttackTimer = _attackTimer;
             }
         }
-         if (_secondaryAttack)
+        if (_secondaryAttack && rb.velocity != Vector3.zero)
             transform.rotation = Quaternion.LookRotation(rb.velocity);
     }
 
-    public void SecondaryAttack() {
+     void SecondaryAttack() {
         base.SecondaryAttack();
-        gameObject.transform.parent = null;
+
         _animator.enabled = false;
-        rb.useGravity = true;
         _secondaryAttack = true;
-        rb.velocity = transform.forward * 25f;
-        transform.rotation = Quaternion.LookRotation(rb.velocity);
+
+        transform.parent = null;
+        rb.isKinematic = false;
+
+        rb.AddForce(cam.transform.forward * 80f, ForceMode.Impulse);
+
+        if (rb.velocity != Vector3.zero)
+            transform.rotation = Quaternion.LookRotation(cam.transform.forward);
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        if (other.gameObject.tag == "Enemy" && _isAttacking) {
+            other.GetComponent<EnemyHealthManager>().RecieveDamage(damage);
+        }
+        Stick();
+    }
+
+    private void Stick() {
+        rb.constraints = RigidbodyConstraints.FreezeAll;
     }
 }

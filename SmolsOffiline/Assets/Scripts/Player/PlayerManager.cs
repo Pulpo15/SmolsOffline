@@ -89,6 +89,8 @@ public class PlayerManager : MonoBehaviour {
 
         //Open-Close Store
         if (Input.GetKeyDown(KeyCode.Tab)) {
+            if (WaveManager.instance.roundActive)
+                return;
             CanvasManager.instance.StoreCanvasManager();
         }
 

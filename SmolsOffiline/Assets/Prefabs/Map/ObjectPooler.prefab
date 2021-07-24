@@ -56,3 +56,7 @@ MonoBehaviour:
     prefab: {fileID: 1674050128692650, guid: 997eda0f844715845a30121b4553e2fd, type: 3}
     parent: {fileID: 0}
     size: 10
+  - tag: MoneyMultiplierTurret
+    prefab: {fileID: 2222580208890338337, guid: d08d7bef5c6a57043ae141e70286bb2d, type: 3}
+    parent: {fileID: 0}
+    size: 10

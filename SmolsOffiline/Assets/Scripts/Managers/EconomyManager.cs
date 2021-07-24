@@ -6,6 +6,7 @@ public class EconomyManager : MonoBehaviour {
     public static EconomyManager instance;
 
     public int money = 0;
+    public int moneyMultiplier = 1;
 
     private void Awake() {
         if (instance != null) {

@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyHealthManager : MonoBehaviour {
 
     public const int maxHeal = 100;
+    public int moneyGiven;
     private int _heal = 100;
 
     private EnemyAnimManager _enemyAnimManager;
@@ -34,6 +35,7 @@ public class EnemyHealthManager : MonoBehaviour {
 
     private void CheckStatus() {
         if (_heal <= 0) {
+            EconomyManager.instance.AddMoney(moneyGiven * EconomyManager.instance.moneyMultiplier);
             _enemyAnimManager.DeathAnimation();
             WaveManager.instance._enemyList.Remove(gameObject);
         }

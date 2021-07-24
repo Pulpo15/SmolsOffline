@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   money: 0
+  moneyMultiplier: 1
 --- !u!114 &3161792760860285068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,7 +93,10 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  wayPointPath: 0
+  _spawnIndex: 0
   timeBetweenWaves: 5
   enemiesPerRound: 3
+  roundActive: 0
   _waveIndex: 0
   _enemyList: []

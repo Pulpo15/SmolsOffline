@@ -33,6 +33,10 @@ public class TurretSpawnig : MonoBehaviour {
     }
 
     private void Update() {
+        //Can't buy turrets during rounds
+        if (WaveManager.instance.roundActive)
+            return;
+        //Enables the pre place to put turrets
         if (activatePreBuy) {
             PreBuyTurret();
             if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Mouse1))

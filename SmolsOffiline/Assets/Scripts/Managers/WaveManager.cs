@@ -15,6 +15,8 @@ public class WaveManager : MonoBehaviour {
 
     public int enemiesPerRound = 2;
 
+    public bool roundActive = false;
+
     [HideInInspector]
     public int _waveIndex = 0;
 
@@ -36,19 +38,31 @@ public class WaveManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (_enemyList.Count <= 0) {
+        if (Input.GetKeyDown(KeyCode.E) && !roundActive) {
             StartCoroutine(SpawnWave());
+        }
+
+        if (_enemyList.Count <= 0 && roundActive) {
+            StartCoroutine(NextRound());
         }
     }
 
     private IEnumerator SpawnWave() {
+        if (!roundActive)
+            roundActive = true;
+
         _waveIndex++;
 
         for (int i = 0; i < enemiesPerRound; i++) {
             SpawnEnemy();
             yield return new WaitForSeconds(1f);
         }
-        //Debug.Log("Wave " + _waveIndex);
+    }
+
+    private IEnumerator NextRound() {
+        yield return new WaitForSeconds(2f);
+        roundActive = false;
+
     }
 
     private void SpawnEnemy() {

@@ -9,26 +9,49 @@ public class TurretSpawnig : MonoBehaviour {
     private float _rotationSensibility = 50f;
     [SerializeField]
     private string GroundLayerName = "Ground";
+
     [Header("Turrets Object References")]
     [SerializeField]
     private GameObject _spawneableTurretPrefab;
     [SerializeField]
     private GameObject _nonSpawneableTurretPrefab;
+    [SerializeField]
+    private GameObject[] _turretPrefabs;
+
 
     [HideInInspector]
     public bool activatePreBuy = false;
 
+    public enum TurretType {
+        Cannon,
+        MoneyMultiplier
+    }
+
+    public TurretType turretType;
+
     private GameObject _spawneableTurretGO;
     private GameObject _nonSpawneableTurretGO;
-    private GameObject _turretGO;
+    public GameObject[] _turretGO;
     private float _rot;
     private int _nonSpawneablelayerMask = 1 << 8;
     private int _spawneablelayerMask = 1 << 9;
     private ObjectPooler _objectPooler;
 
     private void Start() {
-        _nonSpawneableTurretGO = Instantiate(_nonSpawneableTurretPrefab, Vector3.zero, Quaternion.identity);
-        _spawneableTurretGO = Instantiate(_spawneableTurretPrefab, Vector3.zero, Quaternion.identity);
+        //_nonSpawneableTurretGO = Instantiate(_nonSpawneableTurretPrefab, Vector3.zero, Quaternion.identity);
+        //_spawneableTurretGO = Instantiate(_spawneableTurretPrefab, Vector3.zero, Quaternion.identity);
+
+        _turretGO = new GameObject[_turretPrefabs.Length];
+
+        for (int i = 0; i < _turretPrefabs.Length; i++) {
+            _turretGO[i] = Instantiate(_turretPrefabs[i], Vector3.zero, Quaternion.identity);
+            _turretGO[i].SetActive(false);
+        }
+
+        turretType = TurretType.Cannon;
+
+        SwitchTurretType();
+
         _objectPooler = ObjectPooler.instance;
     }
 
@@ -91,6 +114,21 @@ public class TurretSpawnig : MonoBehaviour {
         }
     }
 
+    public void SwitchTurretType() {
+        switch (turretType) {
+            case TurretType.Cannon:
+            _spawneableTurretGO = _turretGO[0];
+            _nonSpawneableTurretGO = _turretGO[1];
+            break;
+            case TurretType.MoneyMultiplier:
+            _spawneableTurretGO = _turretGO[2];
+            _nonSpawneableTurretGO = _turretGO[3];
+            break;
+            default:
+            break;
+        }
+    }
+
     private void TurretObjectManager(GameObject _go, RaycastHit _hit) {
         if (!_go.activeSelf)
             _go.SetActive(true);
@@ -101,11 +139,23 @@ public class TurretSpawnig : MonoBehaviour {
     }
 
     private void GameObjectManager(GameObject _go, bool _state) {
+        if (_go == null)
+            return;
         if (_go.activeSelf != _state)
             _go.SetActive(_state);
     }
 
     private void BuyTurret(Transform _position, Quaternion _rotation) {
-        _turretGO = _objectPooler.SpawnFromPool("CannonTurret", _position.position, _rotation);
+        switch (turretType) {
+            case TurretType.Cannon:
+            _objectPooler.SpawnFromPool("CannonTurret", _position.position, _rotation);
+            break;
+            case TurretType.MoneyMultiplier:
+            _objectPooler.SpawnFromPool("MoneyMultiplierTurret", _position.position, _rotation);
+            EconomyManager.instance.moneyMultiplier += 1;
+            break;
+            default:
+            break;
+        }
     }
 }

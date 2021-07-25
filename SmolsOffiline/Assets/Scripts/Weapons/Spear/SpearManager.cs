@@ -17,6 +17,8 @@ public class SpearManager : Weapon {
     }
 
     private void Update() {
+        if (PlayerManager.instance.turretSpawnig.activatePreBuy || CanvasManager.instance.GetStoreCanvasActive())
+            return;
         if (Input.GetKey(KeyCode.Mouse0)) {
             this.PrepareAttack();
             if (_curAttackTimer <= 0) {

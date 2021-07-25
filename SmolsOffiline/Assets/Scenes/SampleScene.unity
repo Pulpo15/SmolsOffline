@@ -1501,7 +1501,7 @@ Transform:
   m_GameObject: {fileID: 569828868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -67.9, y: 0, z: 281.1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 3}
   m_Children: []
   m_Father: {fileID: 1035647037}
   m_RootOrder: 0
@@ -2254,7 +2254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1035647033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 1, z: 0.1}
   m_Children:
   - {fileID: 569828869}
@@ -2634,6 +2634,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2827190876791626156, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
+      propertyPath: m_Name
+      value: Turret 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3985884460852373577, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2689,10 +2693,6 @@ PrefabInstance:
     - target: {fileID: 3985884462287747780, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: range
       value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3985884462287747780, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
-      propertyPath: weaponType
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5670426963339944793, guid: 78e4a87747ed53f4aa327d5266147fd5, type: 3}
       propertyPath: _swordAnimator

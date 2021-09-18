@@ -31,6 +31,26 @@ public class EnemyAnimManager : MonoBehaviour {
         }
     }
 
+    public void AttackAnimation() {
+        _animator.SetBool("Attack", true);
+        _enemyManager.attack = true;
+    }
+
+    public void AttackDamage() {
+        //Debug.Log("Enemy Attack");
+    }
+
+    public void EndAttack() {
+        _animator.SetBool("Attack", false);
+        StartCoroutine(ResetAttack());
+    }
+
+    IEnumerator ResetAttack() {
+        yield return new WaitForSeconds(2f);
+        _enemyManager.attack = false;
+
+    }
+
     public void EndSpawnAnimation() {
         _enemyManager.spawn = false;
         _animator.SetBool("Spawn", false);

@@ -85,13 +85,16 @@ public class TurretSpawnig : MonoBehaviour {
             if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),
                 out hit, Mathf.Infinity, _spawneablelayerMask)) {
 
-                if (EconomyManager.instance.money >= 100) {
+                SpawneableGroundManager check = hit.transform.gameObject.GetComponent<SpawneableGroundManager>();
+                
+                if (EconomyManager.instance.money >= 100 && check.GetTurretCanSpawn()) {
                     TurretObjectManager(_spawneableTurretGO, hit);
                     GameObjectManager(_nonSpawneableTurretGO, false);
 
                     if (Input.GetKeyDown(KeyCode.Mouse0)) {
                         BuyTurret(_spawneableTurretGO.transform, Quaternion.Euler(0, _rot, 0));
                         EconomyManager.instance.AddMoney(-100);
+                        check.SetTurretCanSpawn(false);
                     }
                 } else {
                     TurretObjectManager(_nonSpawneableTurretGO, hit);

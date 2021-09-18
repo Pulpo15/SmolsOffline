@@ -50,11 +50,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: SkeletonArmature|Skeleton_Idle (1)
-      takeName: SkeletonArmature|Skeleton_Idle
+      name: SkeletonArmature|Skeleton_Attack
+      takeName: SkeletonArmature|Skeleton_Attack
       internalID: 0
       firstFrame: 0
-      lastFrame: 80
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

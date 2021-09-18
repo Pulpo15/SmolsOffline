@@ -10,7 +10,11 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     [HideInInspector]
     public bool dead = false;
     [HideInInspector]
+    public bool attack = false;
+    [HideInInspector]
     public bool isWalking = false;
+    [HideInInspector]
+    public bool isOnObjective;
 
     private Transform _target;
     private int _wayPointIndex;
@@ -21,6 +25,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
 
     private void Awake() {
         _enemyHealthManager = gameObject.GetComponent<EnemyHealthManager>();
+        _enemyAnimManager = gameObject.GetComponentInChildren<EnemyAnimManager>();
     }
 
     public void OnObjectSpawn() {
@@ -31,6 +36,7 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
         SetFirstTarget();
         spawn = true;
         _target = null;
+        isOnObjective = false;
     }
 
     public void SetFirstTarget() {
@@ -43,6 +49,11 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
             return;
         if (dead)
             return;
+        if (isOnObjective && !attack) {
+            _enemyAnimManager.AttackAnimation();
+        }
+        Debug.Log(attack);
+        Debug.Log(isOnObjective);
         if (!isWalking)
             return;
         Quaternion _aimPosition = Quaternion.LookRotation(_target.position - transform.position);
@@ -54,9 +65,14 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
         if (Vector3.Distance(transform.position, _target.position) <= 0.2f) {
             GetNextWaypoint();
         }
+
     }
 
     private void GetNextWaypoint() {
+        if (_wayPointIndex == Waypoints.waypoints.Length / totalPaths - 1) {
+            isOnObjective = true;
+        }
+
         if (_wayPointIndex >= Waypoints.waypoints.Length / totalPaths - 1) {
             isWalking = false;
             return;

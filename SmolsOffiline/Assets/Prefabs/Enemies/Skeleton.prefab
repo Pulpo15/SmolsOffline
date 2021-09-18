@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b2f2af9c8a639344a260a1438acf51e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 5
   totalPaths: 3
   spawn: 0
   dead: 0

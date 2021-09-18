@@ -373,6 +373,7 @@ GameObject:
   - component: {fileID: 106514744}
   - component: {fileID: 106514743}
   - component: {fileID: 106514742}
+  - component: {fileID: 106514745}
   m_Layer: 9
   m_Name: SpawneableGround (4)
   m_TagString: Untagged
@@ -457,6 +458,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 106514740}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &106514745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 106514740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &121361083
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -717,6 +730,7 @@ GameObject:
   - component: {fileID: 208370565}
   - component: {fileID: 208370564}
   - component: {fileID: 208370563}
+  - component: {fileID: 208370566}
   m_Layer: 9
   m_Name: SpawneableGround (3)
   m_TagString: Untagged
@@ -801,6 +815,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 208370561}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &208370566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208370561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &225057424 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7432929008471629800, guid: e9e674b64f45295438130aa027e53aef, type: 3}
@@ -818,6 +844,7 @@ GameObject:
   - component: {fileID: 273777024}
   - component: {fileID: 273777023}
   - component: {fileID: 273777022}
+  - component: {fileID: 273777025}
   m_Layer: 9
   m_Name: SpawneableGround (6)
   m_TagString: Untagged
@@ -902,6 +929,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273777020}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &273777025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273777020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &350903196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1231,6 +1270,7 @@ GameObject:
   - component: {fileID: 466019531}
   - component: {fileID: 466019530}
   - component: {fileID: 466019529}
+  - component: {fileID: 466019532}
   m_Layer: 9
   m_Name: SpawneableGround (8)
   m_TagString: Untagged
@@ -1315,6 +1355,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 466019527}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &466019532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 466019527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &489308737
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1389,6 +1441,7 @@ GameObject:
   - component: {fileID: 558017325}
   - component: {fileID: 558017324}
   - component: {fileID: 558017323}
+  - component: {fileID: 558017326}
   m_Layer: 9
   m_Name: SpawneableGround (2)
   m_TagString: Untagged
@@ -1473,6 +1526,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558017321}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &558017326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558017321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &569828868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1550,7 @@ GameObject:
   - component: {fileID: 569828872}
   - component: {fileID: 569828871}
   - component: {fileID: 569828870}
+  - component: {fileID: 569828873}
   m_Layer: 9
   m_Name: SpawneableGround (1)
   m_TagString: Untagged
@@ -1501,7 +1567,7 @@ Transform:
   m_GameObject: {fileID: 569828868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -67.9, y: 0, z: 281.1}
-  m_LocalScale: {x: 2, y: 1, z: 3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1035647037}
   m_RootOrder: 0
@@ -1569,6 +1635,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 569828868}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &569828873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 569828868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &575145197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1659,7 @@ GameObject:
   - component: {fileID: 575145201}
   - component: {fileID: 575145200}
   - component: {fileID: 575145199}
+  - component: {fileID: 575145202}
   m_Layer: 9
   m_Name: SpawneableGround (7)
   m_TagString: Untagged
@@ -1665,6 +1744,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575145197}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &575145202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575145197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &673826361
 GameObject:
   m_ObjectHideFlags: 0
@@ -2489,6 +2580,7 @@ GameObject:
   - component: {fileID: 1258567800}
   - component: {fileID: 1258567799}
   - component: {fileID: 1258567798}
+  - component: {fileID: 1258567801}
   m_Layer: 9
   m_Name: SpawneableGround (5)
   m_TagString: Untagged
@@ -2573,6 +2665,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258567796}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1258567801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258567796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d817a43de47bfac46b6520e9f6c75ee8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1258808300
 GameObject:
   m_ObjectHideFlags: 0

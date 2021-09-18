@@ -27,7 +27,7 @@ public class PlayerManager : MonoBehaviour {
     public enum WeaponType {
         Sword,
         Spear,
-        Axe
+        SpellBook
     }
     public WeaponType weaponType;
     private Weapon weapon;
@@ -95,13 +95,15 @@ public class PlayerManager : MonoBehaviour {
         }
 
         //Change weapon
-        if (weapon.canAttack) {
-            if (Input.GetKeyDown(KeyCode.Alpha1) && weaponType != WeaponType.Sword) {
-                weaponType = WeaponType.Sword;
-                SetUpWeapon();
-            } else if (Input.GetKeyDown(KeyCode.Alpha2) && weaponType != WeaponType.Spear) {
-                weaponType = WeaponType.Spear;
-                SetUpWeapon();
+        if (weapon != null) {
+            if (weapon.canAttack) {
+                if (Input.GetKeyDown(KeyCode.Alpha1) && weaponType != WeaponType.Sword) {
+                    weaponType = WeaponType.Sword;
+                    SetUpWeapon();
+                } else if (Input.GetKeyDown(KeyCode.Alpha2) && weaponType != WeaponType.Spear) {
+                    weaponType = WeaponType.Spear;
+                    SetUpWeapon();
+                }
             }
         }
 
@@ -157,7 +159,11 @@ public class PlayerManager : MonoBehaviour {
             WeaponParent.transform.GetChild(1).gameObject.SetActive(true);
             return WeaponParent.transform.GetChild(1).GetComponent<Weapon>();
             break;
-            case WeaponType.Axe:
+            case WeaponType.SpellBook:
+            for (int i = 0; i < WeaponParent.transform.childCount; i++) {
+                WeaponParent.transform.GetChild(i).gameObject.SetActive(false);
+            }
+            WeaponParent.transform.GetChild(2).gameObject.SetActive(true);
             return null;
             break;
             default:

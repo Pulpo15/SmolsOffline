@@ -52,8 +52,6 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
         if (isOnObjective && !attack) {
             _enemyAnimManager.AttackAnimation();
         }
-        Debug.Log(attack);
-        Debug.Log(isOnObjective);
         if (!isWalking)
             return;
         Quaternion _aimPosition = Quaternion.LookRotation(_target.position - transform.position);

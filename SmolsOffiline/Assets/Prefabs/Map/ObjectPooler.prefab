@@ -60,3 +60,7 @@ MonoBehaviour:
     prefab: {fileID: 2222580208890338337, guid: d08d7bef5c6a57043ae141e70286bb2d, type: 3}
     parent: {fileID: 0}
     size: 10
+  - tag: DamageProjectile
+    prefab: {fileID: 2628325685163464066, guid: 35cf5f65cba54634c95e71d1616bf113, type: 3}
+    parent: {fileID: 0}
+    size: 30

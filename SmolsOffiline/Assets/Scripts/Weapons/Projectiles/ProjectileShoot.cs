@@ -7,6 +7,7 @@ public class ProjectileShoot : MonoBehaviour {
     public Transform LHFirePoint, RHFirePoint;
     public float projectileSpeed;
     public float fireRate = 4;
+    public float archRange = 1;
 
     private Vector3 _destination;
     private ObjectPooler _objectPooler;
@@ -48,5 +49,7 @@ public class ProjectileShoot : MonoBehaviour {
     private void SpawnProjectileFromPool(Transform _firePoint) {
         GameObject projectileObj = _objectPooler.SpawnFromPool("DamageProjectile", _firePoint.position, Quaternion.identity);
         projectileObj.GetComponent<Rigidbody>().velocity = (_destination - _firePoint.position).normalized * projectileSpeed;
+
+        iTween.PunchPosition(projectileObj, new Vector3(Random.Range(-archRange, archRange), Random.Range(-archRange, archRange), 0), Random.Range(0.5f, 2));
     }
 }

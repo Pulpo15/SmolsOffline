@@ -5078,3 +5078,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 30
   impact: {fileID: 5145051326092899301, guid: 941aa06cc9d34fc488538b813b58fb49, type: 3}
+  diseableTime: 4
+  Beam: {fileID: 8635201819217922321}
+  Trail: {fileID: 2563227240848588538}

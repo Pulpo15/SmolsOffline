@@ -5,14 +5,26 @@ using UnityEngine;
 public class ProjectileManager : MonoBehaviour, IPooledObject {
     public int damage;
     public GameObject impact;
+    public int diseableTime = 4;
+    public ParticleSystem Beam;
+    public GameObject Trail;
+
+    private float time;
 
     public void OnObjectSpawn() {
-        StartCoroutine(DiseableProjectile());
+        time = diseableTime;
+        gameObject.SetActive(true);
+        Beam.Pause();
+        Trail.SetActive(true);
     }
 
-    IEnumerator DiseableProjectile() {
-        yield return new WaitForSeconds(5);
-        gameObject.SetActive(false);
+    private void Update() {
+        time -= Time.deltaTime;
+        if (time <= 0) {
+            gameObject.SetActive(false);
+            Beam.Pause();
+            Trail.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter(Collider collision) {

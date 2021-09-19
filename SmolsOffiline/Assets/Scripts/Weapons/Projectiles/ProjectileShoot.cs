@@ -18,6 +18,8 @@ public class ProjectileShoot : MonoBehaviour {
     }
 
     private void Update() {
+        if (PlayerManager.instance.turretSpawnig.activatePreBuy || CanvasManager.instance.GetStoreCanvasActive())
+            return;
         if (Input.GetKey(KeyCode.Mouse0) && Time.time >= _timeToFire) {
             _timeToFire = Time.time + 1 / fireRate;
             ShootProjectile();

@@ -5,6 +5,8 @@ public class EnemyManager : MonoBehaviour, IPooledObject {
     public float speed = 2f;
     public int totalPaths = 3;
 
+    public Transform catapultPoint;
+
     [HideInInspector]
     public bool spawn = false;
     [HideInInspector]

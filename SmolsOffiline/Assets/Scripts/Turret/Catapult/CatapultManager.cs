@@ -51,9 +51,11 @@ public class CatapultManager : MonoBehaviour {
 
         Vector3 _Vo = CalculateVelocity(_newTarget, firePosition.position, timeToImpact);
 
-        Quaternion _lookRotation = Quaternion.LookRotation(_Vo);
-        firePosition.rotation = _lookRotation;
-        transform.eulerAngles = new Vector3(0f, firePosition.eulerAngles.y, 0f);
+        Vector3 _dir = _newTarget - transform.position;
+        Quaternion _lookRotation = Quaternion.LookRotation(_dir);
+        Vector3 _rotation = Quaternion.Lerp(transform.rotation, _lookRotation, 2f * Time.deltaTime).eulerAngles;
+        firePosition.rotation = Quaternion.Euler(0f, _rotation.y, 0f);
+        transform.rotation = Quaternion.Euler(0f, _rotation.y, 0f);
 
         if (Input.GetKeyDown(KeyCode.G)) {
             Rigidbody _obj = Instantiate(bulletPrefab, firePosition.position, Quaternion.identity);

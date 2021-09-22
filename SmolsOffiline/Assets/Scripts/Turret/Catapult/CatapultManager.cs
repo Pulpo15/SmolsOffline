@@ -14,13 +14,11 @@ public class CatapultManager : MonoBehaviour {
     public Transform firePosition;
     public LayerMask layer;
 
-    private Camera _cam;
     private Transform _target;
-    private float _Noffset = -5f;
-    private float _Poffset = 5f;
+    //private float _Noffset = -5f;
+    //private float _Poffset = 5f;
 
     private void Start() {
-        _cam = Camera.main;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 

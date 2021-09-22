@@ -129,9 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580ba85084c5e584ba95db840626ed94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 15
+  range: 30
   timeToImpact: 3
-  bulletPrefab: {fileID: 4875602098932547952, guid: 3def5cd2756f69a48a6d282ffef0af14, type: 3}
+  bulletPrefab: {fileID: 1561222686413343082, guid: 9d7d0cffb0757744e90c84acce76d390, type: 3}
   impactZone: {fileID: 3917613834678467784}
   firePosition: {fileID: 7792882650157199366}
   layer:

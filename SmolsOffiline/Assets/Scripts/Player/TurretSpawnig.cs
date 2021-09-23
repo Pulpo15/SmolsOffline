@@ -24,7 +24,8 @@ public class TurretSpawnig : MonoBehaviour {
 
     public enum TurretType {
         Cannon,
-        MoneyMultiplier
+        MoneyMultiplier,
+        Catapult
     }
 
     public TurretType turretType;
@@ -127,6 +128,10 @@ public class TurretSpawnig : MonoBehaviour {
             _spawneableTurretGO = _turretGO[2];
             _nonSpawneableTurretGO = _turretGO[3];
             break;
+            case TurretType.Catapult:
+            _spawneableTurretGO = _turretGO[4];
+            _nonSpawneableTurretGO = _turretGO[5];
+            break;
             default:
             break;
         }
@@ -156,6 +161,9 @@ public class TurretSpawnig : MonoBehaviour {
             case TurretType.MoneyMultiplier:
             _objectPooler.SpawnFromPool("MoneyMultiplierTurret", _position.position, _rotation);
             EconomyManager.instance.moneyMultiplier += 1;
+            break;
+            case TurretType.Catapult:
+            _objectPooler.SpawnFromPool("CatapultTurret", _position.position, _rotation);
             break;
             default:
             break;

@@ -15,10 +15,12 @@ public class CatapultManager : MonoBehaviour {
     public LayerMask layer;
 
     private Transform _target;
+    private ObjectPooler _objectPooler;
     //private float _Noffset = -5f;
     //private float _Poffset = 5f;
 
     private void Start() {
+        _objectPooler = ObjectPooler.instance;
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -56,9 +58,10 @@ public class CatapultManager : MonoBehaviour {
         transform.rotation = Quaternion.Euler(0f, _rotation.y, 0f);
 
         if (Input.GetKeyDown(KeyCode.G)) {
-            Rigidbody _obj = Instantiate(bulletPrefab, firePosition.position, Quaternion.identity);
-            _obj.AddTorque(0f, 0f, -100f);
-            _obj.velocity = _Vo;
+            GameObject _obj = _objectPooler.SpawnFromPool("CatapultBullet", firePosition.position, Quaternion.identity);
+            Rigidbody _rb = _obj.GetComponent<Rigidbody>();
+            _rb.AddTorque(0f, 0f, -100f);
+            _rb.velocity = _Vo;
         }
     }
 

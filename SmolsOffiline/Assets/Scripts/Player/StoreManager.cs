@@ -17,4 +17,12 @@ public class StoreManager : MonoBehaviour {
         CanvasManager.instance.SetStoreCanvas(false);
         InGameMenuManager.instance.Resume();
     }
+
+    public void BuyTurret3() {
+        PlayerManager.instance.turretSpawnig.activatePreBuy = true;
+        PlayerManager.instance.turretSpawnig.turretType = TurretSpawnig.TurretType.Catapult;
+        PlayerManager.instance.turretSpawnig.SwitchTurretType();
+        CanvasManager.instance.SetStoreCanvas(false);
+        InGameMenuManager.instance.Resume();
+    }
 }

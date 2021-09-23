@@ -15,11 +15,11 @@ D:/SmolsOffline/SmolsOffiline
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-57064
+50537
 Successfully changed project path to: D:/SmolsOffline/SmolsOffiline
 D:/SmolsOffline/SmolsOffiline
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 77.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 87.74 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -36,611 +36,1500 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56256
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56544
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002138 seconds.
+Registered in 0.002028 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 77.19 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 78.10 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.002 seconds
+- Completed reload, in  0.985 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003994 seconds.
+Registered in 0.004334 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 75.28 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 90.24 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.112 seconds
+- Completed reload, in  1.370 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.10 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3280 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 146.8 MB.
-System memory in use after: 147.0 MB.
+System memory in use before: 147.0 MB.
+System memory in use after: 147.2 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3727.
-Total: 4.217200 ms (FindLiveObjects: 0.664200 ms CreateObjectMapping: 0.356400 ms MarkObjects: 3.065000 ms  DeleteObjects: 0.129900 ms)
+Total: 2.628900 ms (FindLiveObjects: 0.320100 ms CreateObjectMapping: 0.132600 ms MarkObjects: 2.031000 ms  DeleteObjects: 0.144300 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Asteroids Pack
-  artifactKey: Guid(ee0e06b8b915d5447a22adf2902dad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack using Guid(ee0e06b8b915d5447a22adf2902dad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e224661b84d918687e9db769602af7ad') in 0.008578 seconds
-  Import took 0.014493 seconds .
+  path: Assets/Shaders/MeteorRain
+  artifactKey: Guid(612c6181217b2bb499fa93c998336eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain using Guid(612c6181217b2bb499fa93c998336eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d6f92fb8ef44237085b1d525d1ac2c4') in 0.013637 seconds
+  Import took 0.077253 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000213 seconds.
-  path: Assets/Asteroids Pack/Assets
-  artifactKey: Guid(9fde4978a4811a34b80135ed529ada64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets using Guid(9fde4978a4811a34b80135ed529ada64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9858112f1fdd82d7021b34d6a06dfb82') in 0.004598 seconds
-  Import took 0.009346 seconds .
+  Time since last request: 42.876050 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c946a53140c039653d290500d27f97') in 0.057968 seconds
+  Import took 0.203048 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.923918 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes
-  artifactKey: Guid(dcc22de953633a94d97df742bcfb4c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes using Guid(dcc22de953633a94d97df742bcfb4c9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e7e2c78b4467c18441e9792695e713a') in 0.006512 seconds
-  Import took 0.012274 seconds .
+  Time since last request: 6.953743 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8ca43a95fe8eda7c5ba65504dec940') in 0.003211 seconds
+  Import took 0.054497 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.058823 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD0.fbx
-  artifactKey: Guid(d03d0c597bb388947bf16f564153364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD0.fbx using Guid(d03d0c597bb388947bf16f564153364a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a513a31dbadce360d4e1c582bd5c6642') in 0.250243 seconds
-  Import took 0.256078 seconds .
+  Time since last request: 0.169162 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb8ca43a95fe8eda7c5ba65504dec940') in 0.008047 seconds
+  Import took 0.014052 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000197 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD1.fbx
-  artifactKey: Guid(f6c9079cd95ba7c4f967cb514398f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD1.fbx using Guid(f6c9079cd95ba7c4f967cb514398f38f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '026e36c018edca036b6f0bfedd298251') in 0.018078 seconds
-  Import took 0.023431 seconds .
+  Time since last request: 3.652318 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07e1d8128faf29826702c615ef8126f') in 0.007350 seconds
+  Import took 0.045699 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000243 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD2.fbx
-  artifactKey: Guid(c8e5dbd0279404f47898113147f8f42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD2.fbx using Guid(c8e5dbd0279404f47898113147f8f42f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db4aac1b28d9c85a4b93d014e45665b7') in 0.014697 seconds
-  Import took 0.020213 seconds .
+  Time since last request: 0.085478 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e07e1d8128faf29826702c615ef8126f') in 0.006650 seconds
+  Import took 0.012985 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD1.fbx
-  artifactKey: Guid(1b6e00e79bdc23d4888bfb8e5613ab1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD1.fbx using Guid(1b6e00e79bdc23d4888bfb8e5613ab1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '833ee8e36c110a5ddc846f993b9c56d9') in 0.013478 seconds
-  Import took 0.019296 seconds .
+  Time since last request: 4.554832 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6e6ebdb6364f4ad03b7426f28902cf') in 0.008574 seconds
+  Import took 0.069475 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD2.fbx
-  artifactKey: Guid(4fc98ba1e54e0f64aa2c95885ef7026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD2.fbx using Guid(4fc98ba1e54e0f64aa2c95885ef7026e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531b5d7e20952850cacd6b4391070aac') in 0.013853 seconds
-  Import took 0.019450 seconds .
+  Time since last request: 0.030555 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d6e6ebdb6364f4ad03b7426f28902cf') in 0.007895 seconds
+  Import took 0.014828 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD2.fbx
-  artifactKey: Guid(a06b7d8123805974182a9aee714fe013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD2.fbx using Guid(a06b7d8123805974182a9aee714fe013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e8147be12afd62afbff24965415b656') in 0.014105 seconds
-  Import took 0.019150 seconds .
+  Time since last request: 23.649385 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fc74666175fd72e3c3c528c5fd4e67') in 0.004916 seconds
+  Import took 0.033493 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000259 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD0.fbx
-  artifactKey: Guid(e259e812818c9074dbe1011ab1789aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid2_LOD0.fbx using Guid(e259e812818c9074dbe1011ab1789aae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64283c6782be6be3084bbfedf089cfb9') in 0.016625 seconds
-  Import took 0.022219 seconds .
+  Time since last request: 0.083100 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b5fc74666175fd72e3c3c528c5fd4e67') in 0.003662 seconds
+  Import took 0.008837 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000254 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD1.fbx
-  artifactKey: Guid(4fb53cd438460f84a97145bd5e35baf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid1_LOD1.fbx using Guid(4fb53cd438460f84a97145bd5e35baf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c7d4ec6ca0c8de4cbc8955ddc7ec412') in 0.013542 seconds
-  Import took 0.019843 seconds .
+  Time since last request: 8.177983 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a4581baaeb190788426c8ae7afd4f4c') in 0.003977 seconds
+  Import took 0.020537 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD0.fbx
-  artifactKey: Guid(5f67db069f8983f49bdeff2fdad26975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids Pack/Assets/Meshes/asteroid3_LOD0.fbx using Guid(5f67db069f8983f49bdeff2fdad26975) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c06fc2e8f66ba6667b7528515e0ce1c3') in 0.017008 seconds
-  Import took 0.023016 seconds .
+  Time since last request: 3.128631 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ee41e0f3993cc6154f686fb7832977') in 0.003127 seconds
+  Import took 0.027620 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 17.381480 seconds.
-  path: Assets/Asteroids
-  artifactKey: Guid(ee0e06b8b915d5447a22adf2902dad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Asteroids using Guid(ee0e06b8b915d5447a22adf2902dad1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9365d726d645fc2e05a7719bd852e6d') in 0.006555 seconds
-  Import took 0.012177 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005289 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.057 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.1 MB.
-System memory in use after: 144.3 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3778.
-Total: 2.403900 ms (FindLiveObjects: 0.299200 ms CreateObjectMapping: 0.127600 ms MarkObjects: 1.920700 ms  DeleteObjects: 0.055500 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004045 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.101 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.2 MB.
-System memory in use after: 144.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3781.
-Total: 2.455200 ms (FindLiveObjects: 0.320400 ms CreateObjectMapping: 0.180100 ms MarkObjects: 1.888200 ms  DeleteObjects: 0.065600 ms)
+  Time since last request: 0.041647 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91ee41e0f3993cc6154f686fb7832977') in 0.003179 seconds
+  Import took 0.009043 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.157892 seconds.
-  path: Assets/ImportedAssets/Asteroids pack
-  artifactKey: Guid(cac58e1a239f07145993f5f70bcf57bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack using Guid(cac58e1a239f07145993f5f70bcf57bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c4b5191a5be82b631e3cc9ad9b362c') in 0.007370 seconds
-  Import took 0.012010 seconds .
+  Time since last request: 5.297099 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b14fc84861f31d685c1f1468f767d37') in 0.003283 seconds
+  Import took 0.009658 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.695663 seconds.
-  path: Assets/ImportedAssets/Asteroids pack/Materials
-  artifactKey: Guid(3e593cfbef965c346a878c953760899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack/Materials using Guid(3e593cfbef965c346a878c953760899a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7135174e4b64874be0363444deebdaf6') in 0.005170 seconds
-  Import took 0.010897 seconds .
+  Time since last request: 15.805882 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde5be1ba3d2fa3611a23f02aebc9186') in 0.005740 seconds
+  Import took 0.031713 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.326064 seconds.
-  path: Assets/ImportedAssets/Asteroids pack/Textures
-  artifactKey: Guid(c467878c28abf0a49bea3705b2ce6312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack/Textures using Guid(c467878c28abf0a49bea3705b2ce6312) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '695214a3df6af16af0c853117807806d') in 0.005129 seconds
-  Import took 0.010741 seconds .
+  Time since last request: 0.004722 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fde5be1ba3d2fa3611a23f02aebc9186') in 0.003511 seconds
+  Import took 0.009177 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.101533 seconds.
-  path: Assets/ImportedAssets/Asteroids pack/Textures/Texture 2
-  artifactKey: Guid(9dcd618cb685a9b418efa79a90ea5f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack/Textures/Texture 2 using Guid(9dcd618cb685a9b418efa79a90ea5f85) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9cf28265635575435ca2817cfa82223') in 0.005380 seconds
-  Import took 0.011024 seconds .
+  Time since last request: 2.958770 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b82979bf2c84d0249e87682283d30b') in 0.003244 seconds
+  Import took 0.028641 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.726027 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Materials
-  artifactKey: Guid(650190cd13d46e04eaa59500ee855203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Materials using Guid(650190cd13d46e04eaa59500ee855203) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd608857a1ac05ec2f5c30c4c9a804b6b') in 0.001932 seconds
-  Import took 0.007559 seconds .
+  Time since last request: 0.007849 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b82979bf2c84d0249e87682283d30b') in 0.004196 seconds
+  Import took 0.010175 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.058972 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Materials/large_asteroid.mat
-  artifactKey: Guid(0e47fa6aa96cfd044b946d9923d4a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Materials/large_asteroid.mat using Guid(0e47fa6aa96cfd044b946d9923d4a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a42a72742fffb0848addadd34204c598') in 0.199254 seconds
-  Import took 0.206529 seconds .
+  Time since last request: 17.904281 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae3e0788aff7b16df11992b18c150deb') in 0.003564 seconds
+  Import took 0.049900 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000226 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Materials/skybox.mat
-  artifactKey: Guid(18b6bf7c06173654ead94eda5ab1abee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Materials/skybox.mat using Guid(18b6bf7c06173654ead94eda5ab1abee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bf30cf825ddb8490a077a4e832bcee7') in 0.234704 seconds
-  Import took 0.239485 seconds .
+  Time since last request: 1.786019 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231428887c5bf2846ad5356688d6fb65') in 0.003870 seconds
+  Import took 0.039730 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000258 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Materials/small_asteroid.mat
-  artifactKey: Guid(44f9d629006bb76409d3626dd82797c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Materials/small_asteroid.mat using Guid(44f9d629006bb76409d3626dd82797c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9234f842a9ebb0d3442325ad8ab7d0') in 0.021887 seconds
-  Import took 0.028592 seconds .
+  Time since last request: 0.036698 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '231428887c5bf2846ad5356688d6fb65') in 0.003140 seconds
+  Import took 0.008652 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.915127 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs
-  artifactKey: Guid(1b304eba045b7204f9e56955499b6eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs using Guid(1b304eba045b7204f9e56955499b6eb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c739578391c36718a05d7d1325b53b4e') in 0.005287 seconds
-  Import took 0.010941 seconds .
+  Time since last request: 8.199770 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccae563643a0318e5013af5d2da3f11c') in 0.004542 seconds
+  Import took 0.029220 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.027161 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 1.prefab
-  artifactKey: Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 1.prefab using Guid(fa49e460baf435b4780da7196c2ab473) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e24522e0a66574c6d4a4deb51f3461ac') in 0.025407 seconds
-  Import took 0.030703 seconds .
+  Time since last request: 12.449869 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db623056f7d5da6ed5b2f701eb5aaf35') in 0.003582 seconds
+  Import took 0.014588 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000282 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 2.prefab
-  artifactKey: Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 2.prefab using Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b354ddc69da11b57d5c0cc1f2bf8c61') in 0.021309 seconds
-  Import took 0.027363 seconds .
+  Time since last request: 6.349552 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0ef2ce16671ed1e3349fc86ba0efef') in 0.003248 seconds
+  Import took 0.021223 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000244 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 3.prefab
-  artifactKey: Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 3.prefab using Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ca5a3393f68df75a84cc2cd6ea098f') in 0.018333 seconds
-  Import took 0.023815 seconds .
+  Time since last request: 0.015882 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6d0ef2ce16671ed1e3349fc86ba0efef') in 0.008482 seconds
+  Import took 0.015629 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 2.prefab
-  artifactKey: Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 2.prefab using Guid(84cc3cd234dfc9d4d9d2e92c0eb0af75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b354ddc69da11b57d5c0cc1f2bf8c61') in 0.015994 seconds
-  Import took 0.021030 seconds .
+  Time since last request: 8.971756 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22ee6deab56658447213d9fe59b5fcd1') in 0.003660 seconds
+  Import took 0.024501 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000230 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 3.prefab
-  artifactKey: Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Prefabs/Asteroid 3.prefab using Guid(04d0bf4be9447154188d86f6e3b8dce9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46ca5a3393f68df75a84cc2cd6ea098f') in 0.015980 seconds
-  Import took 0.021877 seconds .
+  Time since last request: 6.865354 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0cdc20f3f3512417d24bdbc1e35ecaf') in 0.003304 seconds
+  Import took 0.020303 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 76.984907 seconds.
-  path: Assets/Prefabs/Turrets/Catapult/Meteor.prefab
-  artifactKey: Guid(9d7d0cffb0757744e90c84acce76d390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Turrets/Catapult/Meteor.prefab using Guid(9d7d0cffb0757744e90c84acce76d390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7a7bbdeefac602ec2c6293124199e4') in 0.049000 seconds
-  Import took 0.057483 seconds .
+  Time since last request: 8.925561 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b09b0f3c34fb763fb21b327a71d493e') in 0.003760 seconds
+  Import took 0.029900 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000178 seconds.
-  path: Assets/Prefabs/Turrets/Catapult/MeteorImpact.prefab
-  artifactKey: Guid(5416ac182235e6c49b31443f36a15a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Turrets/Catapult/MeteorImpact.prefab using Guid(5416ac182235e6c49b31443f36a15a60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78b0a8a76f586ba156f6a2f67ef2c933') in 0.011026 seconds
-  Import took 0.017788 seconds .
+  Time since last request: 9.049340 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb83885ecb2256eb663e6ae85d2bbaf2') in 0.005030 seconds
+  Import took 0.026348 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.800167 seconds.
-  path: Assets/Shaders/Meteor/MeteorShader.shadergraph
-  artifactKey: Guid(bda0fb11579fb9a43b615a919f56d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/Meteor/MeteorShader.shadergraph using Guid(bda0fb11579fb9a43b615a919f56d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9970e58ed88dbb9fe4bf8ae357722577') in 0.023066 seconds
-  Import took 0.029661 seconds .
+  Time since last request: 15.797774 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35964d19c46b05f8743d5e1ffb5506d') in 0.003150 seconds
+  Import took 0.036558 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000817 seconds.
-  path: Assets/Shaders/Meteor/MeteorShader.shadergraph
-  artifactKey: Guid(bda0fb11579fb9a43b615a919f56d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/Meteor/MeteorShader.shadergraph using Guid(bda0fb11579fb9a43b615a919f56d733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9970e58ed88dbb9fe4bf8ae357722577') in 0.003180 seconds
-  Import took 0.008740 seconds .
+  Time since last request: 0.006172 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b35964d19c46b05f8743d5e1ffb5506d') in 0.004884 seconds
+  Import took 0.013917 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.716057 seconds.
-  path: Assets/Materials/MeteorImpact/RealisticSmokeAdd_mat.mat
-  artifactKey: Guid(b3553cc8d2521be408df966297e39880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/MeteorImpact/RealisticSmokeAdd_mat.mat using Guid(b3553cc8d2521be408df966297e39880) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17419c8c662003e587b77407a73f1971') in 0.015297 seconds
-  Import took 0.021421 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004116 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.143 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.7 MB.
-System memory in use after: 144.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3854.
-Total: 4.365000 ms (FindLiveObjects: 0.508800 ms CreateObjectMapping: 0.348600 ms MarkObjects: 3.410200 ms  DeleteObjects: 0.096400 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004074 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.02 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.086 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.7 MB.
-System memory in use after: 144.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3857.
-Total: 2.508100 ms (FindLiveObjects: 0.315100 ms CreateObjectMapping: 0.150900 ms MarkObjects: 1.984400 ms  DeleteObjects: 0.056800 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.005922 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.161 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.7 MB.
-System memory in use after: 144.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3860.
-Total: 2.526700 ms (FindLiveObjects: 0.371600 ms CreateObjectMapping: 0.134400 ms MarkObjects: 1.956700 ms  DeleteObjects: 0.063000 ms)
+  Time since last request: 4.249939 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd414f8f86df235913c7bd3ad23ca2a5f') in 0.009042 seconds
+  Import took 0.033498 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 241.488179 seconds.
-  path: Assets/Prefabs/Turrets/Catapult/Meteor.prefab
-  artifactKey: Guid(9d7d0cffb0757744e90c84acce76d390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Turrets/Catapult/Meteor.prefab using Guid(9d7d0cffb0757744e90c84acce76d390) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f11f592b1f81bdf06266fdf5ce77fd20') in 0.233628 seconds
-  Import took 0.246965 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003920 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.198 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 144.9 MB.
-System memory in use after: 145.1 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3899.
-Total: 2.429900 ms (FindLiveObjects: 0.300700 ms CreateObjectMapping: 0.154000 ms MarkObjects: 1.893600 ms  DeleteObjects: 0.080700 ms)
+  Time since last request: 0.002353 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd414f8f86df235913c7bd3ad23ca2a5f') in 0.004113 seconds
+  Import took 0.014389 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 152.119726 seconds.
-  path: Assets/Shaders/Meteor/Stones_mat.mat
-  artifactKey: Guid(6e6244c651b1598438efd822b0631277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Shaders/Meteor/Stones_mat.mat using Guid(6e6244c651b1598438efd822b0631277) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5361cb104315b3cbae93c482ba557801') in 0.161105 seconds
-  Import took 0.166668 seconds .
+  Time since last request: 11.693568 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed74b7669e9af087c5aab242426f4fa2') in 0.003329 seconds
+  Import took 0.021673 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 395.679938 seconds.
-  path: Assets/ImportedAssets/Asteroids pack/Textures/Texture 5
-  artifactKey: Guid(c88662322698ca3428a20119cb49e8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack/Textures/Texture 5 using Guid(c88662322698ca3428a20119cb49e8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3addf450dd4bebda9d91ffc329c60a') in 0.006736 seconds
-  Import took 0.014530 seconds .
+  Time since last request: 15.550710 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc539401a4c60f45791efccf2c5e4e7') in 0.003447 seconds
+  Import took 0.010335 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000938 seconds.
-  path: Assets/ImportedAssets/Asteroids pack/Textures/Texture 5
-  artifactKey: Guid(c88662322698ca3428a20119cb49e8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids pack/Textures/Texture 5 using Guid(c88662322698ca3428a20119cb49e8f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f3addf450dd4bebda9d91ffc329c60a') in 0.002769 seconds
+  Time since last request: 39.563092 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248d3cd7e0252388bcf4242bcadee21f') in 0.003565 seconds
+  Import took 0.009563 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008667 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248d3cd7e0252388bcf4242bcadee21f') in 0.003291 seconds
+  Import took 0.010736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.067295 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebfeaae7f02b72889a6d7a0ba291f26') in 0.003845 seconds
+  Import took 0.039640 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002786 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ebfeaae7f02b72889a6d7a0ba291f26') in 0.003248 seconds
+  Import took 0.008927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.350909 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca17e1ee2649af4e705dbbceea757b07') in 0.003245 seconds
+  Import took 0.020791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.006844 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca17e1ee2649af4e705dbbceea757b07') in 0.003649 seconds
+  Import took 0.009496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.132785 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f12c6a65ad5dd40a97dddce347b0c123') in 0.003241 seconds
+  Import took 0.009810 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.495572 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2ec0d44f2b3877868960ec91729aea') in 0.003325 seconds
+  Import took 0.009353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.191170 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '497208da34c43f236cf6f20637ee3497') in 0.008910 seconds
+  Import took 0.016615 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.654784 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22985df80b99f34f38629aae9388741') in 0.005705 seconds
+  Import took 0.044997 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.694209 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbe5f1ab10827f57fd9750f1cbcfc83') in 0.003711 seconds
+  Import took 0.018525 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009222 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbe5f1ab10827f57fd9750f1cbcfc83') in 0.003720 seconds
+  Import took 0.009204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.674549 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5fa0c73cbf1a91ad31d3e624143c5e') in 0.004287 seconds
+  Import took 0.036310 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015447 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c5fa0c73cbf1a91ad31d3e624143c5e') in 0.003773 seconds
+  Import took 0.013105 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.505466 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e75ad024ef4304e747140a3f822802fa') in 0.024139 seconds
+  Import took 0.061162 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.030550 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f26801bf0d49e5d10d38f3adc33166ce') in 0.005922 seconds
+  Import took 0.026866 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.996669 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1365a93cc81b722c3132c5b7b4e0ab6f') in 0.004571 seconds
+  Import took 0.039039 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016692 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1365a93cc81b722c3132c5b7b4e0ab6f') in 0.008858 seconds
+  Import took 0.017328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.270488 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2c83d58e12a7824bb0cdcf7c3c44a12') in 0.004624 seconds
+  Import took 0.030499 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.972712 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c779b9ba197c4209ba74b29ea70e3fb') in 0.004101 seconds
+  Import took 0.029480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.083986 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c779b9ba197c4209ba74b29ea70e3fb') in 0.006993 seconds
+  Import took 0.025352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.240588 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37221ce4446c865cb133b895adb7c74f') in 0.004005 seconds
+  Import took 0.028892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.008967 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37221ce4446c865cb133b895adb7c74f') in 0.006036 seconds
+  Import took 0.014770 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.569671 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e2b27628faab0fb390e98f35aeb11a') in 0.003899 seconds
+  Import took 0.031567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002582 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3e2b27628faab0fb390e98f35aeb11a') in 0.005066 seconds
+  Import took 0.015133 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.048390 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0ea781fdd4031790f245a9a0bcba2c') in 0.005488 seconds
+  Import took 0.012270 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.184109 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994a68a16db761ad9aad3ec2cca2f2a6') in 0.004734 seconds
+  Import took 0.016320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.827697 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562acc38b5fb4b2612b412cd9d1abeba') in 0.003793 seconds
+  Import took 0.009839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010340 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '562acc38b5fb4b2612b412cd9d1abeba') in 0.003878 seconds
+  Import took 0.009718 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.211087 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0e91a3d5463dbae320b461f44113496') in 0.003728 seconds
+  Import took 0.009329 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.058666 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5199e62f85904e21c6523a7e629d209c') in 0.004377 seconds
+  Import took 0.012792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.837423 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6bda92d6bc618897765b0bcaf8cbc195') in 0.004502 seconds
+  Import took 0.012611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.331865 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dbc11c9e16fd7bdcacc37a00a6fdd7d') in 0.004720 seconds
+  Import took 0.013201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.709783 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8422fa3491307ec74295a93ddc8e3d4a') in 0.003917 seconds
+  Import took 0.010130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010787 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8422fa3491307ec74295a93ddc8e3d4a') in 0.005006 seconds
+  Import took 0.011312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.409116 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d2f637ce23beab361540009610faca1') in 0.007060 seconds
+  Import took 0.017352 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.439545 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84055c727888a4338080deb08cfc6520') in 0.003281 seconds
+  Import took 0.010244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.946374 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d3681108207354874b44dafd7a2f1e') in 0.003719 seconds
+  Import took 0.009652 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.042891 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2de990e7de78f609988adcb4b66838') in 0.003893 seconds
+  Import took 0.010030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 26.485818 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19e8fb1b30b353ea7949feb61e9d9da7') in 0.003359 seconds
+  Import took 0.009187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.556454 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1db712c7289c365c8a8f7f5c6a2a639c') in 0.010634 seconds
+  Import took 0.022608 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 196.436591 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85bf6c28b7b3c4bb2f468251252e535d') in 0.003603 seconds
+  Import took 0.010166 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.190921 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fc6c413342cb558b97a07baa48e1741') in 0.003429 seconds
+  Import took 0.010116 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.714876 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a95fec3de2c57d5decc0e2fe2e2a69') in 0.005588 seconds
+  Import took 0.013240 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.419448 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c122fffb07e5a4eb86d4a8a9fab54ee') in 0.003641 seconds
+  Import took 0.009205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.329365 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efbc4699fad20087288795bedc6dc530') in 0.003213 seconds
+  Import took 0.009529 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.741601 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '024549a1ef47049ea8a6a0b0268e9646') in 0.003438 seconds
+  Import took 0.008759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.926420 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42a1f888c831ec3b715412fca76cb725') in 0.003366 seconds
+  Import took 0.009477 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.151317 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a9d7b131d532c239681aa0f46fb119') in 0.004282 seconds
+  Import took 0.010848 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 41.134469 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5c9c7628d0c61fb77f23cfc5d275d1f') in 0.005028 seconds
+  Import took 0.010688 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 140.423619 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bd8b4c676ff7d3de206aec184f131fe') in 0.008307 seconds
+  Import took 0.015387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.507395 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918ba35d2c8fd9548c4914b42afa3890') in 0.003679 seconds
+  Import took 0.009952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.014051 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77f1f3a2e23af14f250e5e27e71055e6') in 0.004148 seconds
+  Import took 0.009880 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.805535 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4c7e5ee68677afe3d3cedd0a1899944') in 0.004132 seconds
+  Import took 0.009360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.299950 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b2f6b71fed17580a98d159dda0514d4') in 0.004685 seconds
+  Import took 0.010800 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.660767 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b96b07d387c2cc6788e267da117327') in 0.004254 seconds
+  Import took 0.009746 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.903783 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd76a7ba632297076dd823f2e6f531ebc') in 0.003905 seconds
+  Import took 0.010061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 46.790717 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5053a0f6294398afed3e425510e37cf1') in 0.003978 seconds
+  Import took 0.009990 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.211453 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3bf9e2fa9212c85bba107bad64760a1') in 0.004013 seconds
+  Import took 0.010321 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.995689 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432fff35f21e0c23742fabecf2cbfe34') in 0.004423 seconds
+  Import took 0.010894 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.302856 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d1d77a35d4c138abf489bf8a3e27ad') in 0.004795 seconds
+  Import took 0.010641 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.719766 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6f3b57d3da0fc12ddc0ed7b07e18fc') in 0.003962 seconds
+  Import took 0.009426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.009615 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6f3b57d3da0fc12ddc0ed7b07e18fc') in 0.003998 seconds
+  Import took 0.009501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 82.519625 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566b0d483fb318cd3fcc101a1bc3d2c8') in 0.003956 seconds
+  Import took 0.010283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.017670 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '566b0d483fb318cd3fcc101a1bc3d2c8') in 0.004262 seconds
+  Import took 0.011617 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 70.572738 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '198a9fb597a25a76867f2fde1167283f') in 0.005018 seconds
+  Import took 0.012312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.731576 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e67d858b42eec38e711d8ad5039869') in 0.004603 seconds
+  Import took 0.010190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.007521 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e67d858b42eec38e711d8ad5039869') in 0.004514 seconds
+  Import took 0.010129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.205787 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c782c84192137eeae44772c1e5eccb') in 0.004567 seconds
+  Import took 0.011169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018888 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c782c84192137eeae44772c1e5eccb') in 0.004793 seconds
+  Import took 0.013065 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 201.387444 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '003927e72002f729e940d9fe9cb2d252') in 0.006298 seconds
+  Import took 0.015325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.791921 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77a44f8b6448ac940ba1039f2242844c') in 0.003792 seconds
+  Import took 0.010129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.120058 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90651dbdbf079c390ecea9abe2fcfc04') in 0.004346 seconds
+  Import took 0.009900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.232994 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f3d16b2e2f907bfbfbcf47b7e171d08') in 0.004745 seconds
+  Import took 0.009648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.502723 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8883c91309da8f4c8dde689502ca0d97') in 0.003913 seconds
+  Import took 0.009195 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 68.762036 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca4e5811603b3fac0a16c6ad9d199388') in 0.004239 seconds
+  Import took 0.009803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.758054 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '420a8349c747175296335894352614dc') in 0.003722 seconds
+  Import took 0.012505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.643131 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11bf133664d82b1855bc783c9551c76d') in 0.005145 seconds
+  Import took 0.013413 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.570644 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7105e53019d498c45d4ca93ec6a3169f') in 0.005094 seconds
+  Import took 0.010264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001936 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7105e53019d498c45d4ca93ec6a3169f') in 0.004543 seconds
+  Import took 0.009645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.022443 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96359551f8f381908337fc961068cf83') in 0.010042 seconds
+  Import took 0.017198 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004646 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96359551f8f381908337fc961068cf83') in 0.004979 seconds
+  Import took 0.013369 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.014430 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98466fa98af91d608dded86c2909e0bc') in 0.008923 seconds
+  Import took 0.015537 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.119081 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41552970ff6be2ea098abc6ddded3f2a') in 0.007164 seconds
+  Import took 0.013459 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.236025 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57fff3d65bc4ab9a9f40eb0c2b1b08a0') in 0.004763 seconds
+  Import took 0.010373 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.651606 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6cb1b9a53fc8d717d802f1d25c92edc1') in 0.008939 seconds
+  Import took 0.022513 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 93.450721 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb40b4e08bd3fffe555c718ace1125ba') in 0.005040 seconds
+  Import took 0.011381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.416153 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd7833d09aa3141b9b7deca9f46de171') in 0.006372 seconds
+  Import took 0.013917 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.229418 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49a1332bf2bb5cabd92bd35afd3f9888') in 0.004470 seconds
+  Import took 0.010930 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.181651 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a29b9325b2aa7d2e63ecc3d41deca27') in 0.004552 seconds
+  Import took 0.009700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.390073 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ce0e7dd95bf0cff5bd7ecff6c61133') in 0.006891 seconds
+  Import took 0.014518 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.016343 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11ce0e7dd95bf0cff5bd7ecff6c61133') in 0.006370 seconds
+  Import took 0.014071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.181888 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56e32be8a36106d5374cb87727420185') in 0.004189 seconds
+  Import took 0.009306 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.265949 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f74cb3f0c978c3219260f539d0d31490') in 0.005730 seconds
+  Import took 0.011093 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 178.589679 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '333c517cd6da390169475e00f7b1478b') in 0.004749 seconds
+  Import took 0.010543 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.249610 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca52bd98101cfca54222619bf932c888') in 0.004227 seconds
   Import took 0.009404 seconds .
 
 ========================================================================
+Received Import Request.
+  Time since last request: 4.558880 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78835f1797184a230caa8dce590e6ddd') in 0.004333 seconds
+  Import took 0.009478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.331052 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c59eb4d2e0dec72b1ab46254d27347e4') in 0.005882 seconds
+  Import took 0.014536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.038656 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a0c0ab06d3fca316a7365ad62466f4') in 0.004041 seconds
+  Import took 0.009239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.582202 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cced13ca61f2bdff986318214134a19') in 0.006204 seconds
+  Import took 0.012150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010060 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cced13ca61f2bdff986318214134a19') in 0.004441 seconds
+  Import took 0.010699 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 149.943436 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae0fc7ab62acc2888bb794a8675224b5') in 0.005456 seconds
+  Import took 0.011360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.271822 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6e47022ac6422a0f5040cb86e7209d') in 0.006375 seconds
+  Import took 0.014061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.453916 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1afc6a8dd9e6d24b37b7bd8905a7c320') in 0.007307 seconds
+  Import took 0.016193 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.074694 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa2fcdd57ac4b0c4832fd16b0e0770ec') in 0.005105 seconds
+  Import took 0.010779 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 33.127031 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8701843c4d54c4fedf5cda1cd3f1ce96') in 0.006162 seconds
+  Import took 0.013242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.305356 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44a2edcdd49571f8775d32c865fe5cea') in 0.005018 seconds
+  Import took 0.010152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.352809 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52258efe60f7fc1c89ae79c4116abb05') in 0.006038 seconds
+  Import took 0.011536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.306252 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba80cd63b75bda51c9b9c7803223b142') in 0.006055 seconds
+  Import took 0.011250 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.733268 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23c135c19e375cba7d8eb5f63bfc04f6') in 0.012443 seconds
+  Import took 0.019085 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.275608 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2a9643fb6bcb15263f86847d115ea7') in 0.005015 seconds
+  Import took 0.010812 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003739 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d2a9643fb6bcb15263f86847d115ea7') in 0.005031 seconds
+  Import took 0.010299 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.281243 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6a0bd8a1b09850dff147a56e9bd512f') in 0.004726 seconds
+  Import took 0.010725 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.131783 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abf05192e76e9bd13112e5969b3962f') in 0.005403 seconds
+  Import took 0.011118 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.015757 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8abf05192e76e9bd13112e5969b3962f') in 0.006232 seconds
+  Import took 0.011714 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.431691 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77766e4ca8a91ff6e9762f5dad30a1b4') in 0.004870 seconds
+  Import took 0.009769 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.264712 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c3bf534465bfa1b8527ef9347d7eb75') in 0.004622 seconds
+  Import took 0.010150 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 15.051239 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a97672094336a5c5a9eeae71c9bdba0') in 0.007548 seconds
+  Import took 0.012835 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.285625 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf328106c2ffc49e557fed002b0ab7c') in 0.005582 seconds
+  Import took 0.012002 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.085584 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '316a844f52206be118b6f8decea9e202') in 0.012430 seconds
+  Import took 0.021151 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.787897 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ebf634340c2508622362e64a8b8aba') in 0.005245 seconds
+  Import took 0.010825 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 67.330978 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '709dbbe1d2e1fe9758f452acd8cf89a8') in 0.005229 seconds
+  Import took 0.010817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.726168 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d460db94613f7f0119085ff85338fb9') in 0.004880 seconds
+  Import took 0.010523 seconds .
+
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004134 seconds.
+Registered in 0.004154 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.44 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.129 seconds
+- Completed reload, in  1.149 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.0 MB.
-System memory in use after: 145.2 MB.
+System memory in use before: 138.9 MB.
+System memory in use after: 139.1 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3938.
-Total: 3.156500 ms (FindLiveObjects: 0.297600 ms CreateObjectMapping: 0.149600 ms MarkObjects: 2.630800 ms  DeleteObjects: 0.077300 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.054042 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Meshes/asteroid1_LOD1.fbx
-  artifactKey: Guid(4fb53cd438460f84a97145bd5e35baf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Meshes/asteroid1_LOD1.fbx using Guid(4fb53cd438460f84a97145bd5e35baf1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1e6253f723c249a310459480800722') in 0.159787 seconds
-  Import took 0.165195 seconds .
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3730.
+Total: 2.973400 ms (FindLiveObjects: 0.290300 ms CreateObjectMapping: 0.106100 ms MarkObjects: 2.511300 ms  DeleteObjects: 0.064800 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.156968 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Scripts
-  artifactKey: Guid(bc2108dc18f35d347b43af0c3ccc9102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Scripts using Guid(bc2108dc18f35d347b43af0c3ccc9102) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9533d86d91567b390bc4a12c2e731bad') in 0.006893 seconds
-  Import took 0.013501 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.091315 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Scripts/RandomRotator.cs
-  artifactKey: Guid(a718c138b20419b499c3d92b17e6ff7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Scripts/RandomRotator.cs using Guid(a718c138b20419b499c3d92b17e6ff7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a784fcf43593072dcf999f9acfbaafa8') in 0.013053 seconds
-  Import took 0.018584 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.202621 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Textures
-  artifactKey: Guid(a294c4a3a11fab04097adc96fb9ae302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Textures using Guid(a294c4a3a11fab04097adc96fb9ae302) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7b1d70ca9ae32daa9b6ef4295e52c6') in 0.005872 seconds
-  Import took 0.012028 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.178748 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Textures/seamless_rock_texture.jpg
-  artifactKey: Guid(ddce39766e2a9ce48a69c914a4a29487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Textures/seamless_rock_texture.jpg using Guid(ddce39766e2a9ce48a69c914a4a29487) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ae86e89d8740fe54fc7f9df99ef97a') in 0.047503 seconds
-  Import took 0.057257 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Assets/ImportedAssets/Asteroids/Assets/Textures/seamless_rock_texture_detail.jpg
-  artifactKey: Guid(12c40864f9ef9974592868faef1d76c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/Asteroids/Assets/Textures/seamless_rock_texture_detail.jpg using Guid(12c40864f9ef9974592868faef1d76c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '140561bf2799b1d1499a61d6d438b8ae') in 0.017272 seconds
-  Import took 0.022644 seconds .
+  Time since last request: 627.165698 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34fa50166870763b4d2603c55b3b30fb') in 0.056266 seconds
+  Import took 0.061704 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004270 seconds.
+Registered in 0.003971 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.286 seconds
+- Completed reload, in  1.130 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.1 MB.
-System memory in use after: 145.4 MB.
+System memory in use before: 138.9 MB.
+System memory in use after: 139.1 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3980.
-Total: 2.561500 ms (FindLiveObjects: 0.312100 ms CreateObjectMapping: 0.114100 ms MarkObjects: 2.076800 ms  DeleteObjects: 0.057900 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3733.
+Total: 3.424000 ms (FindLiveObjects: 0.762800 ms CreateObjectMapping: 0.318900 ms MarkObjects: 2.272900 ms  DeleteObjects: 0.067300 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.006031 seconds.
+Registered in 0.004066 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.134 seconds
+- Completed reload, in  1.121 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3736.
+Total: 3.826200 ms (FindLiveObjects: 0.479300 ms CreateObjectMapping: 0.217900 ms MarkObjects: 3.019200 ms  DeleteObjects: 0.107900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 51.063834 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a83f2d45f4066def4f8404cf0fb7d') in 0.043281 seconds
+  Import took 0.050069 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001082 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a83f2d45f4066def4f8404cf0fb7d') in 0.005061 seconds
+  Import took 0.010554 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.559155 seconds.
+  path: Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx
+  artifactKey: Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/MeteorRain/vfx_MeteorRainGraph.vfx using Guid(a3c43a4c146c063409933bad11cddba2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b477616907fc6820927af9d3bf238c06') in 0.004636 seconds
+  Import took 0.009992 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004404 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.130 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3739.
+Total: 3.138700 ms (FindLiveObjects: 0.393300 ms CreateObjectMapping: 0.191000 ms MarkObjects: 2.485200 ms  DeleteObjects: 0.068100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004188 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.35 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.231 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3742.
+Total: 3.430000 ms (FindLiveObjects: 0.471300 ms CreateObjectMapping: 0.197300 ms MarkObjects: 2.694300 ms  DeleteObjects: 0.065600 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004323 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.193 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.37 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3745.
+Total: 3.175400 ms (FindLiveObjects: 0.444400 ms CreateObjectMapping: 0.338400 ms MarkObjects: 2.333600 ms  DeleteObjects: 0.058000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005800 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.253 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
 Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.2 MB.
-System memory in use after: 145.4 MB.
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3983.
-Total: 4.063100 ms (FindLiveObjects: 0.577500 ms CreateObjectMapping: 0.481900 ms MarkObjects: 2.924100 ms  DeleteObjects: 0.078300 ms)
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.004471 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.71 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.559 seconds
-Platform modules already initialized, skipping
-Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.2 MB.
-System memory in use after: 145.4 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3986.
-Total: 4.125900 ms (FindLiveObjects: 0.786100 ms CreateObjectMapping: 0.228300 ms MarkObjects: 3.033100 ms  DeleteObjects: 0.077400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 1020.915976 seconds.
-  path: Assets/ImportedAssets/SimpleApocalypse/Materials/Bodies/SA_BurntBody_01.mat
-  artifactKey: Guid(43c8a575626d4454eb5748876aadd6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ImportedAssets/SimpleApocalypse/Materials/Bodies/SA_BurntBody_01.mat using Guid(43c8a575626d4454eb5748876aadd6d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8798d9f24754a07eadf653eec8e88810') in 0.214421 seconds
-  Import took 0.220334 seconds .
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3748.
+Total: 2.471600 ms (FindLiveObjects: 0.333200 ms CreateObjectMapping: 0.243600 ms MarkObjects: 1.826600 ms  DeleteObjects: 0.067400 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004270 seconds.
+Registered in 0.004352 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.140 seconds
+- Completed reload, in  1.198 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.09 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3159 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 145.3 MB.
-System memory in use after: 145.5 MB.
+System memory in use before: 139.0 MB.
+System memory in use after: 139.2 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4025.
-Total: 4.234500 ms (FindLiveObjects: 0.340000 ms CreateObjectMapping: 0.205700 ms MarkObjects: 3.570600 ms  DeleteObjects: 0.117200 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3751.
+Total: 3.670800 ms (FindLiveObjects: 0.409000 ms CreateObjectMapping: 0.196600 ms MarkObjects: 2.996400 ms  DeleteObjects: 0.067800 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

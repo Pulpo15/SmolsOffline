@@ -57,6 +57,7 @@ public class CatapultManager : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.G)) {
             Rigidbody _obj = Instantiate(bulletPrefab, firePosition.position, Quaternion.identity);
+            _obj.AddTorque(0f, 0f, -100f);
             _obj.velocity = _Vo;
         }
     }

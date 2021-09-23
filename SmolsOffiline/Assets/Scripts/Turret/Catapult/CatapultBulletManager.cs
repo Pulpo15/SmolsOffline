@@ -5,8 +5,7 @@ using UnityEngine;
 public class CatapultBulletManager : MonoBehaviour {
 
     public GameObject impactPrefab;
-    public List<GameObject> trails; 
-
+    public List<GameObject> trails;
     private void OnCollisionEnter(Collision other) {
         
         if (other.collider.tag == "Ground") {

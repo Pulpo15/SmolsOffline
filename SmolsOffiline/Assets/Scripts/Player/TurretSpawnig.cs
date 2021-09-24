@@ -12,9 +12,7 @@ public class TurretSpawnig : MonoBehaviour {
 
     [Header("Turrets Object References")]
     [SerializeField]
-    private GameObject _spawneableTurretPrefab;
-    [SerializeField]
-    private GameObject _nonSpawneableTurretPrefab;
+    private GameObject _turretParent;
     [SerializeField]
     private GameObject[] _turretPrefabs;
 
@@ -47,6 +45,7 @@ public class TurretSpawnig : MonoBehaviour {
         for (int i = 0; i < _turretPrefabs.Length; i++) {
             _turretGO[i] = Instantiate(_turretPrefabs[i], Vector3.zero, Quaternion.identity);
             _turretGO[i].SetActive(false);
+            _turretGO[i].transform.SetParent(_turretParent.transform);
         }
 
         turretType = TurretType.Cannon;

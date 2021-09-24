@@ -72,3 +72,7 @@ MonoBehaviour:
     prefab: {fileID: 7353557292433892859, guid: 9d7d0cffb0757744e90c84acce76d390, type: 3}
     parent: {fileID: 0}
     size: 30
+  - tag: CatapultBulletImpact
+    prefab: {fileID: 8280920557162566801, guid: 5416ac182235e6c49b31443f36a15a60, type: 3}
+    parent: {fileID: 0}
+    size: 30

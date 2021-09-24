@@ -38,7 +38,7 @@ public class WaveManager : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.E) && !roundActive) {
+        if (Input.GetKeyDown(KeyCode.R) && !roundActive) {
             StartCoroutine(SpawnWave());
         }
 

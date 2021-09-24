@@ -4,16 +4,20 @@ using UnityEngine;
 
 public class CatapultBulletManager : MonoBehaviour, IPooledObject {
 
-    public GameObject impactPrefab;
     public GameObject meteor;
     public List<GameObject> trails;
 
     private float _timer = 1.5f;
     private float _curTimer;
+    private ObjectPooler _objectPooler;
 
     public void OnObjectSpawn() {
         meteor.SetActive(true);
         _curTimer = 0f;
+    }
+
+    private void Start() {
+        _objectPooler = ObjectPooler.instance;
     }
 
     private void Update() {
@@ -32,10 +36,9 @@ public class CatapultBulletManager : MonoBehaviour, IPooledObject {
             Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _contact.normal);
             Vector3 _pos = _contact.point;
 
-            if (impactPrefab != null) {
-                GameObject _impactVFX = Instantiate(impactPrefab, _pos, _rot);
-                Destroy(_impactVFX, 5);
-            }
+            _objectPooler.SpawnFromPool("CatapultBulletImpact", _pos, _rot);
+
+            //Destroy(_impactVFX, 5);
              
             if (trails.Count > 0) {
                 for (int i = 0; i < trails.Count; i++) {

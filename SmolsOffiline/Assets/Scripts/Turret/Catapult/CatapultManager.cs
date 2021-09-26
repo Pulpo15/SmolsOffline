@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatapultManager : MonoBehaviour {
+public class CatapultManager : MonoBehaviour, IPooledObject {
     
     [Header("Values")]
     public float range = 15f;
     public float timeToImpact;
+    public float fireRate = 5f;
 
     [Header("References")]
     public Rigidbody bulletPrefab;
@@ -16,11 +17,20 @@ public class CatapultManager : MonoBehaviour {
 
     private Transform _target;
     private ObjectPooler _objectPooler;
+    private float _curFireRate = 0f;
+    private bool _canShoot = false;
+    private Animator _animator;
     //private float _Noffset = -5f;
     //private float _Poffset = 5f;
 
+    public void OnObjectSpawn() {
+        _curFireRate = fireRate;
+        _canShoot = false;
+    }
+
     private void Start() {
         _objectPooler = ObjectPooler.instance;
+        _animator = gameObject.GetComponent<Animator>();
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
     }
 
@@ -30,11 +40,11 @@ public class CatapultManager : MonoBehaviour {
 
     void LaunchProjectile() {
         if (_target == null) {
-            impactZone.SetActive(false);
+            //impactZone.SetActive(false);
             return;
         }
 
-        impactZone.SetActive(true);
+        //impactZone.SetActive(true);
         _target.GetComponent<EnemyManager>().catapultPoint.gameObject.SetActive(true);
 
         Vector3 _newTarget = _target.GetComponent<EnemyManager>().catapultPoint.position;
@@ -47,8 +57,9 @@ public class CatapultManager : MonoBehaviour {
         //    Debug.Log("asd");
         //_newTarget = _target.position + Vector3.left * (_Noffset * timeToImpact);
 
-        impactZone.transform.position = _newTarget + Vector3.up * 0.1f;
+        //impactZone.transform.position = _newTarget + Vector3.up * 0.1f;
 
+        //Catapult Rotation
         Vector3 _Vo = CalculateVelocity(_newTarget, firePosition.position, timeToImpact);
 
         Vector3 _dir = _newTarget - transform.position;
@@ -57,12 +68,32 @@ public class CatapultManager : MonoBehaviour {
         firePosition.rotation = Quaternion.Euler(0f, _rotation.y, 0f);
         transform.rotation = Quaternion.Euler(0f, _rotation.y, 0f);
 
-        if (Input.GetKeyDown(KeyCode.G)) {
-            GameObject _obj = _objectPooler.SpawnFromPool("CatapultBullet", firePosition.position, Quaternion.identity);
-            Rigidbody _rb = _obj.GetComponent<Rigidbody>();
-            _rb.AddTorque(0f, 0f, -100f);
-            _rb.velocity = _Vo;
+        //Shoot
+        if (_curFireRate <= 0f) {
+            _animator.SetBool("Shoot", true);
+            _curFireRate = fireRate;
         }
+        if (_canShoot) {
+            Shoot(_Vo);
+            _canShoot = false;
+        }
+        _curFireRate -= Time.deltaTime;
+    }
+
+    public void CanShoot() {
+        _canShoot = true;
+    }
+
+    public void ResetShoot() {
+        _animator.SetBool("Shoot", false);
+    }
+
+
+    private void Shoot(Vector3 _Vo) {
+        GameObject _obj = _objectPooler.SpawnFromPool("CatapultBullet", firePosition.position, Quaternion.identity);
+        Rigidbody _rb = _obj.GetComponent<Rigidbody>();
+        _rb.AddTorque(0f, 0f, -100f);
+        _rb.velocity = _Vo;
     }
 
     private void OnDrawGizmosSelected() {

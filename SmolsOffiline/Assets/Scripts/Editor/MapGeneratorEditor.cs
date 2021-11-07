@@ -9,10 +9,10 @@ public class MapGeneratorEditor : Editor {
 
         if (DrawDefaultInspector()) {
             if (_mapGen.autoUpdate)
-                _mapGen.GenerateMap();
+                _mapGen.DrawMapInEditor();
         }
 
         if (GUILayout.Button("Generate"))
-            _mapGen.GenerateMap();
+            _mapGen.DrawMapInEditor();
     }
 }

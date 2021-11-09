@@ -9,9 +9,11 @@ public class MapGenerator : MonoBehaviour {
     public enum DrawMode { NoiseMap, ColorMap, Mesh };
     public DrawMode drawMode;
 
+    public Noise.NormalizeMode normalizeMode;
+
     public const int mapChunkSize = 241;
     [Range(0, 6)]
-    public int levelOfDetail;
+    public int editorPreviewLOD;
     public float noiseScale;
 
     public int octaves;
@@ -33,7 +35,7 @@ public class MapGenerator : MonoBehaviour {
     private Queue<MapThreadInfo<MeshData>> _meshDataThreadInfoQueue = new Queue<MapThreadInfo<MeshData>>();
 
     public void DrawMapInEditor() {
-        MapData _mapData = GenerateMapData();
+        MapData _mapData = GenerateMapData(Vector2.zero);
 
         MapDisplay _display = FindObjectOfType<MapDisplay>();
         if (drawMode == DrawMode.NoiseMap) {
@@ -41,35 +43,36 @@ public class MapGenerator : MonoBehaviour {
         } else if (drawMode == DrawMode.ColorMap) {
             _display.DrawTexture(TextureGenerator.TextureFromColorMap(_mapData.colorMap, mapChunkSize, mapChunkSize));
         } else if (drawMode == DrawMode.Mesh) {
-            _display.DrawMesh(MeshGenerator.GenerateTerrainMesh(_mapData.heightMap, meshHeightMultiplier, meshHeightCurve, levelOfDetail), TextureGenerator.TextureFromColorMap(_mapData.colorMap, mapChunkSize, mapChunkSize));
+            _display.DrawMesh(MeshGenerator.GenerateTerrainMesh(_mapData.heightMap, meshHeightMultiplier, meshHeightCurve, editorPreviewLOD)
+                , TextureGenerator.TextureFromColorMap(_mapData.colorMap, mapChunkSize, mapChunkSize));
         }
     }
 
-    public void RequestMapData(Action<MapData> _callback) {
+    public void RequestMapData(Vector2 _center, Action<MapData> _callback) {
         ThreadStart _threadStart = delegate {
-            MapDataThread(_callback);
+            MapDataThread(_center, _callback);
         };
 
         new Thread(_threadStart).Start();
     }
 
-    void MapDataThread(Action<MapData> _callback) {
-        MapData _mapData = GenerateMapData();
+    void MapDataThread(Vector2 _center, Action<MapData> _callback) {
+        MapData _mapData = GenerateMapData(_center);
         lock (_mapDataThreadInfoQueue) {
             _mapDataThreadInfoQueue.Enqueue(new MapThreadInfo<MapData>(_callback, _mapData));
         }
     }
 
-    public void RequestMeshData(MapData _mapData, Action<MeshData> _callback) {
+    public void RequestMeshData(MapData _mapData, int _lod, Action<MeshData> _callback) {
         ThreadStart _threadStart = delegate {
-            MeshDataThread(_mapData, _callback);
+            MeshDataThread(_mapData, _lod, _callback);
         };
 
         new Thread(_threadStart).Start();
     }
 
-    void MeshDataThread(MapData _mapData, Action<MeshData> _callback) {
-        MeshData _meshData = MeshGenerator.GenerateTerrainMesh(_mapData.heightMap, meshHeightMultiplier, meshHeightCurve, levelOfDetail);
+    void MeshDataThread(MapData _mapData,int _lod, Action<MeshData> _callback) {
+        MeshData _meshData = MeshGenerator.GenerateTerrainMesh(_mapData.heightMap, meshHeightMultiplier, meshHeightCurve, _lod);
         lock (_meshDataThreadInfoQueue) {
             _meshDataThreadInfoQueue.Enqueue(new MapThreadInfo<MeshData>(_callback, _meshData));
         }
@@ -90,16 +93,18 @@ public class MapGenerator : MonoBehaviour {
         }
     }
 
-    MapData GenerateMapData() {
-        float[,] _noiseMap = Noise.GenerateNoiseMap(mapChunkSize, mapChunkSize, seed, noiseScale, octaves, persistance, lacunarity, offset);
+    MapData GenerateMapData(Vector2 _center) {
+        float[,] _noiseMap = Noise.GenerateNoiseMap(mapChunkSize, mapChunkSize, seed, noiseScale, octaves, persistance, lacunarity, 
+            _center + offset, normalizeMode);
 
         Color[] _colorMap = new Color[mapChunkSize * mapChunkSize];
         for (int y = 0; y < mapChunkSize; y++) {
             for (int x = 0; x < mapChunkSize; x++) {
                 float _currentHeight = _noiseMap[x, y];
                 for (int i = 0; i < regions.Length; i++) {
-                    if (_currentHeight <= regions[i].height) {
+                    if (_currentHeight >= regions[i].height) {
                         _colorMap[y * mapChunkSize + x] = regions[i].color;
+                    } else {
                         break;
                     }
                 }

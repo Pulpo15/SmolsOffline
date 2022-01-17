@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":2.1639280319213869,"y":1.5895466804504395,"z":-236.86708068847657},"rotation":{"x":0.20230145752429963,"y":0.33302947878837588,"z":-0.07339023798704148,"w":0.9180351495742798},"size":13.608617782592774,"orthographic":false}
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"m_AlwaysRefresh":false,"showFog":true,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":15.272369384765625,"y":1.5576858520507813,"z":5.60833740234375},"rotation":{"x":-0.021598437801003457,"y":-0.9338312745094299,"z":0.35245367884635928,"w":-0.05722517892718315},"size":95.81631469726563,"orthographic":false}
+>>>>>>> parent of cf46d160 (Bad Ligthing)

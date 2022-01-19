@@ -15,11 +15,11 @@ D:/SmolsOffline/SmolsOffiline
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50808
+53014
 Successfully changed project path to: D:/SmolsOffline/SmolsOffiline
 D:/SmolsOffline/SmolsOffiline
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 93.83 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 75.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.10f1 (297d780c91bc)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Resources/UnitySubsystems
@@ -36,416 +36,643 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56864
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002189 seconds.
+Registered in 0.002197 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 80.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.218 seconds
+- Completed reload, in  1.723 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.005485 seconds.
+Registered in 0.004517 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 93.03 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 75.29 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.315 seconds
+- Completed reload, in  1.061 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 0.86 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3290 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 149.1 MB.
 System memory in use after: 149.3 MB.
 
 Unloading 20 unused Assets to reduce memory usage. Loaded Objects now: 3741.
-Total: 6.644100 ms (FindLiveObjects: 0.293500 ms CreateObjectMapping: 0.147500 ms MarkObjects: 5.694500 ms  DeleteObjects: 0.503700 ms)
+Total: 2.463100 ms (FindLiveObjects: 0.308300 ms CreateObjectMapping: 0.132100 ms MarkObjects: 1.935700 ms  DeleteObjects: 0.086200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a12e44df841f71ca7ac29d4b9365eaaa') in 0.053436 seconds
-  Import took 0.060050 seconds .
+  path: Assets/Scripts/Procedural Generation/Data
+  artifactKey: Guid(f58afdd5d270d3f4387d868f74c80779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data using Guid(f58afdd5d270d3f4387d868f74c80779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afd1c7ed2dd6d4b59f5247d53e377287') in 0.008410 seconds
+  Import took 0.012914 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 41.639462 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004fdd8ef2de0f108b3f0ebbc30e9a77') in 0.004524 seconds
-  Import took 0.013633 seconds .
+  Time since last request: 26.593548 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/NoiseData.cs
+  artifactKey: Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/NoiseData.cs using Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b76736262d81de4a16844604347f28be') in 0.045146 seconds
+  Import took 0.050650 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008731 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.436 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.6 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3745.
+Total: 2.830500 ms (FindLiveObjects: 0.430900 ms CreateObjectMapping: 0.119000 ms MarkObjects: 2.209800 ms  DeleteObjects: 0.069700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004595 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.967 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3168 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.7 MB.
+System memory in use after: 140.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3748.
+Total: 2.355600 ms (FindLiveObjects: 0.258400 ms CreateObjectMapping: 0.115400 ms MarkObjects: 1.917800 ms  DeleteObjects: 0.063300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.003475 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/NoiseData.cs
+  artifactKey: Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/NoiseData.cs using Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81cc94886b5e1acdc90ff136336e60b7') in 0.005559 seconds
+  Import took 0.010137 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 44.844577 seconds.
+  path: Assets/Scripts/Procedural Generation/MapGenerator.cs
+  artifactKey: Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/MapGenerator.cs using Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360ee8e0eeb88c03d7925edf95b34b1f') in 0.006122 seconds
+  Import took 0.013789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.018970 seconds.
+  path: Assets/Scripts/Procedural Generation/MapGenerator.cs
+  artifactKey: Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/MapGenerator.cs using Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '360ee8e0eeb88c03d7925edf95b34b1f') in 0.002397 seconds
+  Import took 0.008567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.253647 seconds.
+  path: Assets/Scripts/Procedural Generation/MapGenerator.cs
+  artifactKey: Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/MapGenerator.cs using Guid(916b4f4143ed7456294aa19afa97bde8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02042a54db5493e389cff0c7eadfbaac') in 0.003477 seconds
+  Import took 0.010989 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.151761 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TerrainData.cs
+  artifactKey: Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TerrainData.cs using Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29d40a05c0f11dad931974b92366afd') in 0.008809 seconds
+  Import took 0.015700 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005475 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TerrainData.cs
+  artifactKey: Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TerrainData.cs using Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29d40a05c0f11dad931974b92366afd') in 0.002525 seconds
+  Import took 0.010073 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005893 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.009 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3752.
+Total: 2.844300 ms (FindLiveObjects: 0.295200 ms CreateObjectMapping: 0.112900 ms MarkObjects: 2.357200 ms  DeleteObjects: 0.078200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 424.561998 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TerrainData.cs
+  artifactKey: Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TerrainData.cs using Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '840f5f94df267c754a831b935edec4d3') in 0.005446 seconds
+  Import took 0.011599 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004381 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.015 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3755.
+Total: 2.525200 ms (FindLiveObjects: 0.302700 ms CreateObjectMapping: 0.138500 ms MarkObjects: 2.019500 ms  DeleteObjects: 0.063600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.608127 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets
+  artifactKey: Guid(11610adf132ed724c8050e2bb7ed67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets using Guid(11610adf132ed724c8050e2bb7ed67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5252e4b7dbd913ce7c0257ebd09e0011') in 0.009656 seconds
+  Import took 0.018190 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000298 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004fdd8ef2de0f108b3f0ebbc30e9a77') in 0.002430 seconds
-  Import took 0.012839 seconds .
+  path: Assets/Scripts/Procedural Generation/TerrainAssets
+  artifactKey: Guid(11610adf132ed724c8050e2bb7ed67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets using Guid(11610adf132ed724c8050e2bb7ed67b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5252e4b7dbd913ce7c0257ebd09e0011') in 0.002207 seconds
+  Import took 0.007539 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.888803 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19da16c0ab127efcec84189132768078') in 0.003003 seconds
-  Import took 0.008612 seconds .
+  Time since last request: 15.216712 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets/DefaultNoise.asset
+  artifactKey: Guid(baf6ad5d0610eb64da9cf2ee23363c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets/DefaultNoise.asset using Guid(baf6ad5d0610eb64da9cf2ee23363c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45358f83c344af6b9a2b0a3b94a01332') in 0.125274 seconds
+  Import took 0.131620 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002143 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19da16c0ab127efcec84189132768078') in 0.001987 seconds
-  Import took 0.008479 seconds .
+  Time since last request: 8.964801 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset
+  artifactKey: Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset using Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dd66e746d8ee882c15a82866fe0552') in 0.008083 seconds
+  Import took 0.013638 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 14.320832 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f45f136b6aa46bdfd4f62699ec0f0fce') in 0.002864 seconds
-  Import took 0.009580 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 18.884999 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7c4cd0b4f8dbb92a864544a998eb39') in 0.002584 seconds
-  Import took 0.007823 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001552 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a7c4cd0b4f8dbb92a864544a998eb39') in 0.002100 seconds
-  Import took 0.011804 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.301396 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d2cecd5decbce41d0167ae19ee375c') in 0.007124 seconds
-  Import took 0.016119 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001319 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d2cecd5decbce41d0167ae19ee375c') in 0.002746 seconds
-  Import took 0.012906 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 319.651048 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a746fe200066b37c0582b9c39d0775f') in 0.003335 seconds
-  Import took 0.009829 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001586 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a746fe200066b37c0582b9c39d0775f') in 0.001890 seconds
-  Import took 0.007381 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 38.643483 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da88248f6ed523cb88cc5cee305a032') in 0.003316 seconds
-  Import took 0.018011 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000752 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0da88248f6ed523cb88cc5cee305a032') in 0.006666 seconds
-  Import took 0.018502 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 25.749602 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0400c6d38e63409ed3792b6c88a61220') in 0.006520 seconds
-  Import took 0.015015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.785249 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715d0f3d36ebc21a299ea3563151d2de') in 0.008196 seconds
-  Import took 0.015641 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000612 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '715d0f3d36ebc21a299ea3563151d2de') in 0.005021 seconds
-  Import took 0.013898 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.096421 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde1097075d41803ae581d22704a2fd9') in 0.002281 seconds
-  Import took 0.009108 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.003818 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bde1097075d41803ae581d22704a2fd9') in 0.003059 seconds
-  Import took 0.012008 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 11.414810 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dac09bf51d283e1fea6b3b9cd45c0ee') in 0.008388 seconds
-  Import took 0.015587 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 35.705958 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af25b87831aa2e1ae22e819cd2c7a2d6') in 0.002361 seconds
-  Import took 0.007783 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001751 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af25b87831aa2e1ae22e819cd2c7a2d6') in 0.001793 seconds
-  Import took 0.007745 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 63.157035 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c72a8c3a41c9da197920320c292c8b') in 0.002485 seconds
-  Import took 0.011245 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002088 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29c72a8c3a41c9da197920320c292c8b') in 0.001981 seconds
-  Import took 0.009146 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.368536 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df8a3312c5f2cc539830c5097898956') in 0.003809 seconds
-  Import took 0.016199 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.004482 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5df8a3312c5f2cc539830c5097898956') in 0.002245 seconds
-  Import took 0.010524 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 31.922383 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658b215e98a82b9b47ab7f5b231d40bb') in 0.002988 seconds
-  Import took 0.009722 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000983 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658b215e98a82b9b47ab7f5b231d40bb') in 0.003218 seconds
-  Import took 0.015314 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.292924 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ff49d94648eaa0abee6f659a8ac09b') in 0.001938 seconds
-  Import took 0.007179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002168 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1ff49d94648eaa0abee6f659a8ac09b') in 0.001876 seconds
-  Import took 0.008713 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 26.837271 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6867a44f5c035820f29f8c7f5d1d5df') in 0.003083 seconds
-  Import took 0.008625 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.925387 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ba08f423712f80de5dbebd0efcbbbc') in 0.003039 seconds
-  Import took 0.008500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.974463 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091be5d0118def41c563f8e12c8eb318') in 0.003170 seconds
-  Import took 0.008737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.002021 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '091be5d0118def41c563f8e12c8eb318') in 0.001864 seconds
-  Import took 0.007212 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.327543 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a1c9f173c9997f2b6976008ac0cc95') in 0.002515 seconds
-  Import took 0.012707 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.001973 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64a1c9f173c9997f2b6976008ac0cc95') in 0.001719 seconds
-  Import took 0.007522 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 13.744097 seconds.
-  path: Assets/Scripts/Procedural Generation/MeshGenerator.cs
-  artifactKey: Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Procedural Generation/MeshGenerator.cs using Guid(7939d15f4beb24a65bc949a0e3c02d5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '549ef1822632f74d772a119dcbff6593') in 0.002977 seconds
-  Import took 0.013628 seconds .
+  Time since last request: 0.001356 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset
+  artifactKey: Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset using Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69dd66e746d8ee882c15a82866fe0552') in 0.002706 seconds
+  Import took 0.008295 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005197 seconds.
+Registered in 0.005526 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.049 seconds
+- Completed reload, in  0.976 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3167 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 140.9 MB.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3744.
-Total: 2.616200 ms (FindLiveObjects: 0.303300 ms CreateObjectMapping: 0.117700 ms MarkObjects: 2.127700 ms  DeleteObjects: 0.066400 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3759.
+Total: 2.233700 ms (FindLiveObjects: 0.265400 ms CreateObjectMapping: 0.124800 ms MarkObjects: 1.780700 ms  DeleteObjects: 0.062000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 120.103989 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/NewBehaviourScript.cs
+  artifactKey: Guid(7d29f23d6da0179439d2d7f96ea6cfa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/NewBehaviourScript.cs using Guid(7d29f23d6da0179439d2d7f96ea6cfa8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '201bab7458d409447f190d46dcab9608') in 1.433182 seconds
+  Import took 1.439522 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004873 seconds.
+Registered in 0.004228 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.18 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.071 seconds
+- Completed reload, in  0.951 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3167 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.7 MB.
-System memory in use after: 140.9 MB.
+Unloading 3169 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3747.
-Total: 2.523700 ms (FindLiveObjects: 0.343600 ms CreateObjectMapping: 0.141400 ms MarkObjects: 1.972800 ms  DeleteObjects: 0.064700 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 3761.
+Total: 2.328600 ms (FindLiveObjects: 0.294100 ms CreateObjectMapping: 0.152200 ms MarkObjects: 1.815700 ms  DeleteObjects: 0.065800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.479137 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/UpdatableData.cs
+  artifactKey: Guid(07daf65027cc94043a99a43c7a5a9ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/UpdatableData.cs using Guid(07daf65027cc94043a99a43c7a5a9ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa6465857b7f1a9d67e1e187c9fb59df') in 0.010684 seconds
+  Import took 0.016179 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.004295 seconds.
+Registered in 0.004294 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.079 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.13 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3765.
+Total: 2.424400 ms (FindLiveObjects: 0.323300 ms CreateObjectMapping: 0.150100 ms MarkObjects: 1.886800 ms  DeleteObjects: 0.063100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.164941 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.929 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3170 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.8 MB.
+System memory in use after: 141.0 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3768.
+Total: 3.976100 ms (FindLiveObjects: 0.494600 ms CreateObjectMapping: 0.173400 ms MarkObjects: 3.181100 ms  DeleteObjects: 0.125700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 189.303053 seconds.
+  path: Assets/Scripts/Procedural Generation/Editor/UpdatableDataEditor.cs
+  artifactKey: Guid(4f89d953ff330b444803b7245fd013e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Editor/UpdatableDataEditor.cs using Guid(4f89d953ff330b444803b7245fd013e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4af86bdf71ec54b49b07cf34ca6abcc3') in 0.011448 seconds
+  Import took 0.018633 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004178 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3772.
+Total: 2.862300 ms (FindLiveObjects: 0.385000 ms CreateObjectMapping: 0.204000 ms MarkObjects: 2.194000 ms  DeleteObjects: 0.078200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.732381 seconds.
+  path: Assets/Scripts/Procedural Generation/Editor/MapGeneratorEditor.cs
+  artifactKey: Guid(36580b8c831d94d3392f333a33b58f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Editor/MapGeneratorEditor.cs using Guid(36580b8c831d94d3392f333a33b58f7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73743c3f65612fbd756f5253923d4409') in 0.008896 seconds
+  Import took 0.014326 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004068 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 2.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.072 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3775.
+Total: 6.784500 ms (FindLiveObjects: 0.443100 ms CreateObjectMapping: 0.146800 ms MarkObjects: 6.017200 ms  DeleteObjects: 0.174600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 105.913571 seconds.
+  path: Assets/Scripts/Procedural Generation/Editor/UpdatableDataEditor.cs
+  artifactKey: Guid(4f89d953ff330b444803b7245fd013e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Editor/UpdatableDataEditor.cs using Guid(4f89d953ff330b444803b7245fd013e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '673ee096d8b69113b40315587075c745') in 0.011765 seconds
+  Import took 0.020268 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006566 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.043 seconds
+- Completed reload, in  1.121 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.82 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3167 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 141.0 MB.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3750.
-Total: 2.359700 ms (FindLiveObjects: 0.240800 ms CreateObjectMapping: 0.111100 ms MarkObjects: 1.937700 ms  DeleteObjects: 0.069200 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3778.
+Total: 2.282700 ms (FindLiveObjects: 0.311500 ms CreateObjectMapping: 0.114100 ms MarkObjects: 1.794100 ms  DeleteObjects: 0.062200 ms)
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.005006 seconds.
+Registered in 0.005456 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 1.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.012 seconds
+- Completed reload, in  1.167 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 1.12 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3167 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 140.8 MB.
-System memory in use after: 141.0 MB.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3753.
-Total: 3.072400 ms (FindLiveObjects: 0.423600 ms CreateObjectMapping: 0.123500 ms MarkObjects: 2.454300 ms  DeleteObjects: 0.069700 ms)
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3781.
+Total: 2.400400 ms (FindLiveObjects: 0.286000 ms CreateObjectMapping: 0.142400 ms MarkObjects: 1.903100 ms  DeleteObjects: 0.068000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004272 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.971 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3784.
+Total: 4.102900 ms (FindLiveObjects: 0.793800 ms CreateObjectMapping: 0.179100 ms MarkObjects: 3.047600 ms  DeleteObjects: 0.080000 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004382 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.946 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3787.
+Total: 2.920600 ms (FindLiveObjects: 0.348500 ms CreateObjectMapping: 0.143600 ms MarkObjects: 2.354300 ms  DeleteObjects: 0.073100 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1604.761880 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets/DefaultNoise.asset
+  artifactKey: Guid(baf6ad5d0610eb64da9cf2ee23363c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets/DefaultNoise.asset using Guid(baf6ad5d0610eb64da9cf2ee23363c91) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '909309c266c122783ceed75355131c92') in 0.135713 seconds
+  Import took 0.142767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset
+  artifactKey: Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/TerrainAssets/DefaultTerrain.asset using Guid(94c8291ea9acea944a88c1eab9360313) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b24ea450773330245bc5754280f9847') in 0.009997 seconds
+  Import took 0.015554 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004470 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.253 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 2.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3790.
+Total: 5.388100 ms (FindLiveObjects: 0.982500 ms CreateObjectMapping: 0.570800 ms MarkObjects: 3.682600 ms  DeleteObjects: 0.149700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004371 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.956 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3793.
+Total: 2.695100 ms (FindLiveObjects: 0.335200 ms CreateObjectMapping: 0.188300 ms MarkObjects: 2.095700 ms  DeleteObjects: 0.074900 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004318 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.27 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.208 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.00 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3171 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.1 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3796.
+Total: 4.446100 ms (FindLiveObjects: 0.834000 ms CreateObjectMapping: 0.356300 ms MarkObjects: 3.169800 ms  DeleteObjects: 0.084800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 210.583131 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TextureData.cs
+  artifactKey: Guid(e2064556df17f2b468eb94e90f16ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TextureData.cs using Guid(e2064556df17f2b468eb94e90f16ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c890f81c72fde11546c08eee6eaebeae') in 0.010913 seconds
+  Import took 0.016704 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004490 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.007 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 140.9 MB.
+System memory in use after: 141.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3800.
+Total: 2.574400 ms (FindLiveObjects: 0.315100 ms CreateObjectMapping: 0.149000 ms MarkObjects: 2.043800 ms  DeleteObjects: 0.065400 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.423363 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TerrainData.cs
+  artifactKey: Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TerrainData.cs using Guid(7c886f7fc51171847b7458f4ed8882c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61a54c50b262ef5a2ea3b1f7b0469f45') in 0.007974 seconds
+  Import took 0.013276 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/UpdatableData.cs
+  artifactKey: Guid(07daf65027cc94043a99a43c7a5a9ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/UpdatableData.cs using Guid(07daf65027cc94043a99a43c7a5a9ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5357564c4f41d4772857f707eb322aa3') in 0.004970 seconds
+  Import took 0.010226 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.219577 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/NoiseData.cs
+  artifactKey: Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/NoiseData.cs using Guid(bbd9f964c06d97e4580cef438342f2c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dffb3e7c7442ebfbc8ee0d64dbd274b') in 0.005689 seconds
+  Import took 0.012396 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004587 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.150 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 4.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3172 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 141.0 MB.
+System memory in use after: 141.2 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3803.
+Total: 2.569900 ms (FindLiveObjects: 0.337100 ms CreateObjectMapping: 0.167900 ms MarkObjects: 1.987900 ms  DeleteObjects: 0.076000 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 184.389937 seconds.
+  path: Assets/Scripts/Procedural Generation/Data/TextureData.cs
+  artifactKey: Guid(e2064556df17f2b468eb94e90f16ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Procedural Generation/Data/TextureData.cs using Guid(e2064556df17f2b468eb94e90f16ba79) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cbea8832ffeaade359d6278148217cc') in 0.006114 seconds
+  Import took 0.015308 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file

@@ -1058,6 +1058,7 @@ GameObject:
   - component: {fileID: 3985884460852373579}
   - component: {fileID: 3985884460852373576}
   - component: {fileID: 3985884460852373589}
+  - component: {fileID: 555155646567362280}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1160,6 +1161,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &555155646567362280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3985884460852373582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64f0ce5c754fe214fa54c3ab5ec54693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _enable: 1
+  _amplitude: 0.005
+  _frequency: 20
+  _camera: {fileID: 3985884462122598705}
+  _cameraHolder: {fileID: 3985884462287747640}
 --- !u!1 &3985884462122598708
 GameObject:
   m_ObjectHideFlags: 0
@@ -1393,7 +1411,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e316f2cf6bcece740985670d4ef06b5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 200
+  mouseSensitivity: 400
   RB: {fileID: 3985884460852373589}
   speed: 10
   groundLayers:
@@ -1434,8 +1452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationSensibility: 50
   GroundLayerName: Ground
-  _spawneableTurretPrefab: {fileID: 2264093352710455655, guid: 6eb0d280ef6f88941a6eaa1c3109ca49, type: 3}
-  _nonSpawneableTurretPrefab: {fileID: 3477812679701049226, guid: a96b1ac921706f8419167f07053c1224, type: 3}
+  _turretParent: {fileID: 0}
   _turretPrefabs:
   - {fileID: 2264093352710455655, guid: 6eb0d280ef6f88941a6eaa1c3109ca49, type: 3}
   - {fileID: 3477812679701049226, guid: a96b1ac921706f8419167f07053c1224, type: 3}
@@ -2475,9 +2492,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
---- !u!95 &7058012928545862785 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7021548418737192001, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
+--- !u!1 &36754787590262238 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 181534, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
   m_PrefabInstance: {fileID: 36754787590342848}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &36754787590042318 stripped
@@ -2485,9 +2502,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 489998, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
   m_PrefabInstance: {fileID: 36754787590342848}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &36754787590262238 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 181534, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
+--- !u!95 &7058012928545862785 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7021548418737192001, guid: 13af847dfa6dbe844ba4b7c902f98f67, type: 3}
   m_PrefabInstance: {fileID: 36754787590342848}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2156995303333092639
@@ -2728,13 +2745,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 64933e563f5bff649bf3549d4e3cee46, type: 3}
---- !u!1 &444509161621408118 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7109607436658550990, guid: 64933e563f5bff649bf3549d4e3cee46, type: 3}
-  m_PrefabInstance: {fileID: 7242158674747843000}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &444509161621408119 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7109607436658550991, guid: 64933e563f5bff649bf3549d4e3cee46, type: 3}
+  m_PrefabInstance: {fileID: 7242158674747843000}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &444509161621408118 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7109607436658550990, guid: 64933e563f5bff649bf3549d4e3cee46, type: 3}
   m_PrefabInstance: {fileID: 7242158674747843000}
   m_PrefabAsset: {fileID: 0}

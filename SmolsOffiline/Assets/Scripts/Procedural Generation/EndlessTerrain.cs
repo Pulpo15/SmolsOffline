@@ -30,6 +30,8 @@ public class EndlessTerrain : MonoBehaviour {
 		chunksVisibleInViewDst = Mathf.RoundToInt(maxViewDst / chunkSize);
 
 		UpdateVisibleChunks ();
+
+        
 	}
 
 	void Update() {
@@ -38,7 +40,7 @@ public class EndlessTerrain : MonoBehaviour {
 		if ((viewerPositionOld - viewerPosition).sqrMagnitude > sqrViewerMoveThresholdForChunkUpdate) {
 			viewerPositionOld = viewerPosition;
 			UpdateVisibleChunks ();
-		}
+		}        
 	}
 		
 	void UpdateVisibleChunks() {
@@ -205,5 +207,4 @@ public class EndlessTerrain : MonoBehaviour {
 		public float visibleDstThreshold;
 		public bool useForCollider;
 	}
-
 }

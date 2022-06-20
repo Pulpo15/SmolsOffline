@@ -31,7 +31,7 @@ public class CatapultBulletManager : MonoBehaviour, IPooledObject {
 
     private void OnCollisionEnter(Collision other) {
         
-        if (other.collider.tag == "Ground") {
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) {
             ContactPoint _contact = other.contacts[0];
             Quaternion _rot = Quaternion.FromToRotation(Vector3.up, _contact.normal);
             Vector3 _pos = _contact.point;
@@ -39,7 +39,7 @@ public class CatapultBulletManager : MonoBehaviour, IPooledObject {
             _objectPooler.SpawnFromPool("CatapultBulletImpact", _pos, _rot);
 
             //Destroy(_impactVFX, 5);
-             
+
             if (trails.Count > 0) {
                 for (int i = 0; i < trails.Count; i++) {
                     //trails[i].transform.parent = null;

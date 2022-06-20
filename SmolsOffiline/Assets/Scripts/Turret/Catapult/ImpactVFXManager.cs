@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class ImpactVFXManager : MonoBehaviour, IPooledObject {
-    private float _time = 5f;
+    public float _time = 5f;
     private float _curTime;
     
     public void OnObjectSpawn() {

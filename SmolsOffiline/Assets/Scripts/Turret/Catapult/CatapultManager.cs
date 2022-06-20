@@ -49,16 +49,6 @@ public class CatapultManager : MonoBehaviour, IPooledObject {
 
         Vector3 _newTarget = _target.GetComponent<EnemyManager>().catapultPoint.position;
 
-        //Vector3 _newTarget = new Vector3();
-
-        //if (_target.eulerAngles.y <= 180f || _target.eulerAngles.y >= 90.01f)
-        //    _newTarget = _target.position + Vector3.forward * (_Noffset * timeToImpact);
-        //else if (_target.eulerAngles.y <= 90f || _target.eulerAngles.y >= 0.01f)
-        //    Debug.Log("asd");
-        //_newTarget = _target.position + Vector3.left * (_Noffset * timeToImpact);
-
-        //impactZone.transform.position = _newTarget + Vector3.up * 0.1f;
-
         //Catapult Rotation
         Vector3 _Vo = CalculateVelocity(_newTarget, firePosition.position, timeToImpact);
 

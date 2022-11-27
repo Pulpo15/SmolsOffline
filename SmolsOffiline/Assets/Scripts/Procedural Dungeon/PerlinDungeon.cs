@@ -12,6 +12,7 @@ public class PerlinDungeon : MonoBehaviour {
     const int GROUND_OFFSET = 6;
     const int NORMAL_WALL = 0;
     const int MIDDLE_WALL = 1;
+    const int CORNER_WALL = 2;
 
     private void Start() {
         GenerateMap();
@@ -46,6 +47,7 @@ public class PerlinDungeon : MonoBehaviour {
         bool hLeft = false;
         for(int x = 0; x < mapWidth; x++) {
 
+            //Instantiate outter walls Horizontal y = 0 *Start*
             Vector3 outterWallsPosition = _mapGrounds[x][0].transform.localPosition;
             if(hLeft) {
                 Vector3 vector3 = outterWallsPosition;
@@ -55,14 +57,14 @@ public class PerlinDungeon : MonoBehaviour {
 
                 _wall = Instantiate(walls[MIDDLE_WALL], vector3,
                 _mapGrounds[x][0].transform.rotation, _mapGrounds[x][0].transform);
-                //left = false;
             } else if(!hLeft) { 
-                outterWallsPosition += new Vector3(-1, 1, -3.5f); 
-                //left = true;
+                outterWallsPosition += new Vector3(-1, 1, -3.5f);
             }
             _wall = Instantiate(walls[NORMAL_WALL], outterWallsPosition,
                 _mapGrounds[x][0].transform.rotation, _mapGrounds[x][0].transform);
+            //Instantiate outter walls Horizontal y = 0 *End*
 
+            //Instantiate outter walls Horizontal y = mapWidth *Start*
             outterWallsPosition = _mapGrounds[x][mapWidth - 1].transform.localPosition;
             if(hLeft) {
                 Vector3 vector3 = outterWallsPosition;
@@ -79,10 +81,12 @@ public class PerlinDungeon : MonoBehaviour {
             }
             _wall = Instantiate(walls[NORMAL_WALL], outterWallsPosition,
                 _mapGrounds[x][mapWidth - 1].transform.rotation, _mapGrounds[x][mapWidth - 1].transform);
+            //Instantiate outter walls Horizontal y = mapWidth *End*
 
-            bool vLeft = false;
+            bool vLeft = true;
             for(int y = 0; y < mapHeight; y++) {
 
+                //Instantiate outter walls Vertical x = 0 *Start*
                 outterWallsPosition = _mapGrounds[0][y].transform.localPosition;
 
                 if(vLeft) {
@@ -91,36 +95,202 @@ public class PerlinDungeon : MonoBehaviour {
                     vector3 += new Vector3(-3.5f, 1, 3);
                     outterWallsPosition += new Vector3(-3.5f, 1, -1);
 
-                    _wall = Instantiate(walls[MIDDLE_WALL], vector3,
-                    new Quaternion(0, 180, 0, 0), _mapGrounds[0][y].transform);
-                    //left = false;
+                    if(x == 0) {
+                        _wall = Instantiate(walls[MIDDLE_WALL], vector3,
+                            new Quaternion(0, 180, 0, 0), _mapGrounds[0][y].transform);
+                        _wall.transform.eulerAngles = new Vector3(0, 90, 0);
+                    }
+                    //vLeft = false;
                 } else if(!vLeft) {
-                    outterWallsPosition += new Vector3(-3.5f, 1, -3f);
-                    //left = true;
+                    outterWallsPosition += new Vector3(-3.5f, 1, 1f);
+                    //vLeft = true;
                 }
-                _wall = Instantiate(walls[NORMAL_WALL], outterWallsPosition,
-                    new Quaternion(0, 180, 0, 0), _mapGrounds[0][y].transform);
+                if (x == 0) {
+                    _wall = Instantiate(walls[NORMAL_WALL], outterWallsPosition,
+                        Quaternion.identity, _mapGrounds[0][y].transform);
+                    _wall.transform.eulerAngles = new Vector3(0, 90, 0);
+                }
+                //Instantiate outter walls Vertical x = 0 *End*
 
-                //_wall = Instantiate(walls[NORMAL_WALL], _mapGrounds[mapHeight - 1][y].transform.localPosition,
-                //    _mapGrounds[mapHeight - 1][y].transform.rotation, _mapGrounds[0][mapHeight - 1].transform);
+                //Instantiate outter walls Vertical x = mapHeight *Start*
+                outterWallsPosition = _mapGrounds[mapHeight-1][y].transform.localPosition;
 
+                if(vLeft) {
+                    Vector3 vector3 = outterWallsPosition;
+
+                    vector3 += new Vector3(3.5f, 1, 3);
+                    outterWallsPosition += new Vector3(3.5f, 1, -1);
+
+                    if(x == 0) {
+                        _wall = Instantiate(walls[MIDDLE_WALL], vector3,
+                            Quaternion.identity, _mapGrounds[mapHeight - 1][y].transform);
+                        _wall.transform.eulerAngles = new Vector3(0, -90, 0);
+                    }
+                    vLeft = false;
+                } else if(!vLeft) {
+                    outterWallsPosition += new Vector3(3.5f, 1, 1f);
+                    vLeft = true;
+                }
+                if(x == mapHeight-1) {
+                    _wall = Instantiate(walls[NORMAL_WALL], outterWallsPosition,
+                        Quaternion.identity, _mapGrounds[mapHeight - 1][y].transform);
+                    _wall.transform.eulerAngles = new Vector3(0, 90, 0);
+                }
+                //Instantiate outter walls Vertical x = mapHeight *End*
+
+                //Instantiate inner ground walls
                 if(x < mapWidth && y < mapHeight) {
                     if(_mapTiles[x][y] == 0) {
-                        _wall = Instantiate(walls[NORMAL_WALL], _mapGrounds[x][y].transform.localPosition,
-                            _mapGrounds[x][y].transform.rotation, _mapGrounds[x][y].transform);
+                        Transform _parent = _mapGrounds[x][y].transform;
+
+                        //Up Left Corner
+                        Vector3 _position = new Vector3(-4, 1, -4);
+                        Quaternion _rotation = new Quaternion(0,0,0,0);
+
+                        _wall = Instantiate(walls[CORNER_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Left Wall
+                        _position = new Vector3(0, 1, -4);
+                        _rotation = new Quaternion(0, 0, 0, 0);
+
+                        _wall = Instantiate(walls[NORMAL_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Down Left Corner
+                        _position = new Vector3(4, 1, -4);
+                        _rotation = new Quaternion(0, -90, 0, 0);
+
+                        _wall = Instantiate(walls[CORNER_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Down Wall
+                        _position = new Vector3(4, 1, 0);
+                        _rotation = new Quaternion(0, -90, 0, 0);
+
+                        _wall = Instantiate(walls[NORMAL_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Down Right Corner
+                        _position = new Vector3(4, 1, 4);
+                        _rotation = new Quaternion(0, 180, 0, 0);
+
+                        _wall = Instantiate(walls[CORNER_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Right Wall
+                        _position = new Vector3(0, 1, 4);
+                        _rotation = new Quaternion(0, 0, 0, 0);
+
+                        _wall = Instantiate(walls[NORMAL_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Up Right Corner
+                        _position = new Vector3(-4, 1, 4);
+                        _rotation = new Quaternion(0, 90, 0, 0);
+
+                        _wall = Instantiate(walls[CORNER_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Up Wall
+                        _position = new Vector3(-4, 1, 0);
+                        _rotation = new Quaternion(0, -90, 0, 0);
+
+                        _wall = Instantiate(walls[NORMAL_WALL],
+                            _position,
+                            _rotation,
+                            _parent);
+
+                        _wall.transform.localPosition = _position;
+                        _wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        //Vector3 _position = Vector3.zero;
+                        //Quaternion _rotation = Quaternion.identity;
+                        //Transform _parent = _mapGrounds[x][y].transform;
+
+                        ////Up Left Corner
+                        //_position = new Vector3(-2, 1, -2);
+                        //_rotation = new Quaternion(0, 0, 0, 0);
+
+                        //_wall = Instantiate(walls[CORNER_WALL],
+                        //    _position,
+                        //    _rotation,
+                        //    _parent);
+
+                        //_wall.transform.localPosition = _position;
+                        //_wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        ////Down Left Corner
+                        //_position = new Vector3(2, 1, -2);
+                        //_rotation = new Quaternion(0, -90, 0, 0);
+
+                        //_wall = Instantiate(walls[CORNER_WALL],
+                        //    _position,
+                        //    _rotation,
+                        //    _parent);
+
+                        //_wall.transform.localPosition = _position;
+                        //_wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        ////Down Right Corner
+                        //_position = new Vector3(2, 1, 2);
+                        //_rotation = new Quaternion(0, 180, 0, 0);
+
+                        //_wall = Instantiate(walls[CORNER_WALL],
+                        //    _position,
+                        //    _rotation,
+                        //    _parent);
+
+                        //_wall.transform.localPosition = _position;
+                        //_wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
+
+                        ////Up Right Corner
+                        //_position = new Vector3(-2, 1, 2);
+                        //_rotation = new Quaternion(0, 90, 0, 0);
+
+                        //_wall = Instantiate(walls[CORNER_WALL],
+                        //    _position,
+                        //    _rotation,
+                        //    _parent);
+
+                        //_wall.transform.localPosition = _position;
+                        //_wall.transform.eulerAngles = new Vector3(_rotation.x, _rotation.y, _rotation.z);
                     }
-                    //if(_mapTiles[x - 1][y] == 0) {
-                    //    _wall = Instantiate(wall, _mapGrounds[x][y].transform.localPosition,
-                    //        _mapGrounds[x][y].transform.rotation, _mapGrounds[x][y].transform);
-                    //}
-                    //if(_mapTiles[x - 1][y - 1] == 0) {
-                    //    _wall = Instantiate(wall, _mapGrounds[x][y].transform.localPosition,
-                    //        _mapGrounds[x][y].transform.rotation, _mapGrounds[x][y].transform);
-                    //}
-                    //if(_mapTiles[x + 1][y - 1] == 0) {
-                    //    _wall = Instantiate(wall, _mapGrounds[x][y].transform.localPosition,
-                    //        _mapGrounds[x][y].transform.rotation, _mapGrounds[x][y].transform);
-                    //}
                 }
             }
         }
@@ -131,7 +301,6 @@ public class PerlinDungeon : MonoBehaviour {
         GameObject _tile = Instantiate(_prefab);
         _tile.transform.localPosition = new Vector3(x *= GROUND_OFFSET, 0, y *= GROUND_OFFSET);
         return _tile;
-        
 
         //if (x + 1 < mapWidth && y + 1 < mapHeight) {
         //    if(_mapTiles[x + 1][y + 1] == 0) {

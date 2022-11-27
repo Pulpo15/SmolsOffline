@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3699904210213931951}
   - component: {fileID: 357869955121218570}
   - component: {fileID: 2527539300008587456}
+  - component: {fileID: 6614692290489466353}
   m_Layer: 0
   m_Name: MiddleWall
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6614692290489466353
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4040683147933143317}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2200266604382906324, guid: bd97edfb39519d24ba46cfb74669eee4, type: 3}
 --- !u!1 &8649292317813689639
 GameObject:
   m_ObjectHideFlags: 0

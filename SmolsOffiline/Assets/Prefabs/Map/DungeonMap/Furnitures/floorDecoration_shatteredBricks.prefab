@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8414377653688295229}
   - component: {fileID: 4857700028365164696}
   - component: {fileID: 7245996279343129682}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: floorDecoration_shatteredBricks
   m_TagString: Untagged
   m_Icon: {fileID: 0}

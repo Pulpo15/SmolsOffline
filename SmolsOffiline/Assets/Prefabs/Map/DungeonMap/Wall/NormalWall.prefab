@@ -153,6 +153,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: torchWall
       objectReference: {fileID: 0}
+    - target: {fileID: 5729830556281458700, guid: 3e7b393a7f028824f9414b1230987d5a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e7b393a7f028824f9414b1230987d5a, type: 3}
 --- !u!4 &6540424991624311450 stripped
@@ -214,6 +218,10 @@ PrefabInstance:
     - target: {fileID: 5729830556281458700, guid: 3e7b393a7f028824f9414b1230987d5a, type: 3}
       propertyPath: m_Name
       value: torchWall (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729830556281458700, guid: 3e7b393a7f028824f9414b1230987d5a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e7b393a7f028824f9414b1230987d5a, type: 3}

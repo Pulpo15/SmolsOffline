@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 3704289091517831530}
   - component: {fileID: 344416348904445647}
   - component: {fileID: 2531985689673310725}
-  - component: {fileID: 4117948218104796969}
+  - component: {fileID: 1056067262954646642}
+  - component: {fileID: 6595351723543783044}
   m_Layer: 0
   m_Name: wallCorner
   m_TagString: Untagged
@@ -83,7 +84,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4117948218104796969
+--- !u!65 &1056067262954646642
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,5 +95,18 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.7500353, y: 4, z: 2.749966}
-  m_Center: {x: 0.6249824, y: 2, z: 0.62498295}
+  m_Size: {x: 2.7500353, y: 4, z: 1.5212117}
+  m_Center: {x: 0.62498236, y: 2, z: 0.0106057525}
+--- !u!65 &6595351723543783044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4045243886958150608}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5174005, y: 4, z: 2.749966}
+  m_Center: {x: 0.008665174, y: 2, z: 0.62498295}

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6627473099493705928}
   - component: {fileID: 7806524030823466861}
   - component: {fileID: 5454615024902894503}
+  - component: {fileID: 3447554853221098141}
+  - component: {fileID: 8069015055996125178}
   m_Layer: 0
   m_Name: wallIntersection
   m_TagString: Untagged
@@ -82,3 +84,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &3447554853221098141
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5814801358812336754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5356364, y: 4, z: 4.0000005}
+  m_Center: {x: 0.0018327236, y: 2, z: 0.00000023841858}
+--- !u!65 &8069015055996125178
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5814801358812336754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 1.556901}
+  m_Center: {x: 0, y: 2, z: 0}

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6760471820031609753}
   - component: {fileID: 7673534359488087100}
   - component: {fileID: 5591546119115649270}
+  - component: {fileID: 8275309519001938869}
+  - component: {fileID: 5481733079512495647}
   m_Layer: 0
   m_Name: wall_gateCorner
   m_TagString: Untagged
@@ -83,3 +85,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8275309519001938869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6240253924695445795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7500353, y: 4, z: 1.514682}
+  m_Center: {x: 0.62498236, y: 2, z: 0.0073410273}
+--- !u!65 &5481733079512495647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6240253924695445795}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5105848, y: 4, z: 2.7499998}
+  m_Center: {x: 0.0052571297, y: 2, z: 0.6249999}

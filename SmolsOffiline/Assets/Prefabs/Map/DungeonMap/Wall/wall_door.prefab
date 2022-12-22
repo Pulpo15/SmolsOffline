@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 1903142974033144847}
   - component: {fileID: 3298475401689015210}
   - component: {fileID: 730285380478785376}
+  - component: {fileID: 8693885976432895598}
+  - component: {fileID: 156790443671315501}
   m_Layer: 0
   m_Name: wall_door
   m_TagString: Untagged
@@ -83,6 +85,58 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &8693885976432895598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234693142254909109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0312033, y: 4, z: 1.5000007}
+  m_Center: {x: -2, y: 2, z: 0.00000023841858}
+--- !u!65 &156790443671315501
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234693142254909109}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0206356, y: 4, z: 1.5000007}
+  m_Center: {x: 1.9896822, y: 2, z: 0.00000023841858}
+--- !u!65 &1589268910538204876
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243090165722212114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.5, z: 0.47382665}
+  m_Center: {x: -1, y: 1.0429423, z: -0.00000037252903}
+--- !u!65 &1320656260396860310
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2243090165722212114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.5, z: 3.196732}
+  m_Center: {x: -1, y: 1.0429423, z: -0.26558882}
 --- !u!1001 &1432258270151989827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,6 +194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be1eab96636ea9f44aeb09a629c52135, type: 3}
+--- !u!1 &2243090165722212114 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: be1eab96636ea9f44aeb09a629c52135, type: 3}
+  m_PrefabInstance: {fileID: 1432258270151989827}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1471232541426662824 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: be1eab96636ea9f44aeb09a629c52135, type: 3}

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 4786787427039386506}
   - component: {fileID: 8485290054287234095}
   - component: {fileID: 5919200030557921509}
+  - component: {fileID: 5242364919770655558}
+  - component: {fileID: 3923517909926729298}
   m_Layer: 0
   m_Name: wallSplit
   m_TagString: Untagged
@@ -82,3 +84,29 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5242364919770655558
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5270835960136679728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5271826, y: 4, z: 2.7500007}
+  m_Center: {x: 0.0017828941, y: 2, z: 0.62499964}
+--- !u!65 &3923517909926729298
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5270835960136679728}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4, y: 4, z: 1.5107429}
+  m_Center: {x: 0, y: 2, z: 0.005370736}
